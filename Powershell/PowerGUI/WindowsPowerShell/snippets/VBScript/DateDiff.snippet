@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>DateDiff</Title>
+      <Shortcut>datediff</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript DateDiff function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>startDate</ID>
+          <Default>Get-Date</Default>
+          <ToolTip>Value identifying the start date</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>endDate</ID>
+          <Default>$dateString</Default>
+          <ToolTip>Value identifying the end date</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = New-TimeSpan -Start ($startDate$) -End ([DateTime]$endDate$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

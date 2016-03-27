@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>COM object</Title>
+      <Shortcut>com</Shortcut>
+      <Description>Create a new COM object of a specified type</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>NewObject</ID>
+          <Default>$internetExplorer</Default>
+          <ToolTip>Variable that will hold the new COM object</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>TypeName</ID>
+          <Default>InternetExplorer.Application</Default>
+          <ToolTip>The type of COM object you are creating</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$NewObject$ = New-Object -ComObject $TypeName$
+$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

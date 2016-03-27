@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Start job from script file</Title>
+      <Shortcut>jobps1</Shortcut>
+      <Description>Run a ps1 file as a background job</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>ps1File</ID>
+          <Default>$env:PUBLIC\Documents\CheckStatus.ps1</Default>
+          <ToolTip>The script to run in the background</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[Start-Job -FilePath $ps1File$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

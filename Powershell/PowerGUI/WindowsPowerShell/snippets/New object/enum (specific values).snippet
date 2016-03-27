@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Enum (specific values)</Title>
+      <Shortcut>enumint</Shortcut>
+      <Description>Create a new enumeration type with specific values</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Namespace</ID>
+          <Default>HyperV</Default>
+          <ToolTip>The name of the namespace you want associated with your the enumeration type that you are creating</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Name</ID>
+          <Default>RequestedJobState</Default>
+          <ToolTip>The name of the enumeration type that you are creating</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value1Name</ID>
+          <Default>Start</Default>
+          <ToolTip>The name of the first entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value1Value</ID>
+          <Default>2</Default>
+          <ToolTip>The value of the first entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value2Name</ID>
+          <Default>Suspend</Default>
+          <ToolTip>The name of the second entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value2Value</ID>
+          <Default>3</Default>
+          <ToolTip>The value of the second entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value3Name</ID>
+          <Default>Terminate</Default>
+          <ToolTip>The name of the third entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value3Value</ID>
+          <Default>4</Default>
+          <ToolTip>The value of the third entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value4Name</ID>
+          <Default>Kill</Default>
+          <ToolTip>The name of the fourth entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value4Value</ID>
+          <Default>5</Default>
+          <ToolTip>The value of the fourth entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value5Name</ID>
+          <Default>Service</Default>
+          <ToolTip>The name of the fifth entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value5Value</ID>
+          <Default>6</Default>
+          <ToolTip>The value of the fifth entry in your new enumeration</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[#region Define the $Name$ enumeration.
+
+if (-not ('PowerShellTypeExtensions.$Namespace$.$Name$' -as [System.Type])) {
+	$cSharpCode = @'
+using System;
+
+namespace PowerShellTypeExtensions
+{
+	namespace $Namespace$
+	{
+		public enum $Name$ : int
+		{
+			$Value1Name$ = $Value1Value$,
+			$Value2Name$ = $Value2Value$,
+			$Value3Name$ = $Value3Value$,
+			$Value4Name$ = $Value4Value$,
+			$Value5Name$ = $Value5Value$
+		}
+	}
+}
+'@
+
+	Add-Type -TypeDefinition $cSharpCode
+}
+
+#endregion
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

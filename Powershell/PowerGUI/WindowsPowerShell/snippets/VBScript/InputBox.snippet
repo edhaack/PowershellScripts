@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>InputBox</Title>
+      <Shortcut>inputbox</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript InputBox function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>prompt</ID>
+          <Default>'Please enter your name'</Default>
+          <ToolTip>Message to display to user</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$result$ = Read-Host -Prompt $prompt$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

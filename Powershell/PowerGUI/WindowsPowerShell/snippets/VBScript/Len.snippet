@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Len</Title>
+      <Shortcut>len</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Len function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>stringVariable</ID>
+          <Default>$myString</Default>
+          <ToolTip>The string for which you want to determine the length</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = $stringVariable$.Length$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

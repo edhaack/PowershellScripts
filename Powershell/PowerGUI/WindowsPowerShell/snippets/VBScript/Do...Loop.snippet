@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Do...Loop</Title>
+      <Shortcut>doloop</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Do...Loop statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>whileOrUntil</ID>
+          <Default>while</Default>
+          <ToolTip>Keyword identifying the type of Do...Loop that is being used (valid values are while and until)</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>condition</ID>
+          <Default>$true</Default>
+          <ToolTip>Conditional expression to evaluate</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[do {
+	$selected$$end$
+} $whileOrUntil$ ($condition$)]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

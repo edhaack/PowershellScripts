@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Start initialized job</Title>
+      <Shortcut>jobi</Shortcut>
+      <Description>Run one or more commands as an initialized background job</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>initializationScript</ID>
+          <Default>{Add-PSSnapin Quest.ActiveRoles.ADManagement}</Default>
+          <ToolTip>The initialization script that must run without error before the job can start</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[Start-Job -InitializationScript $initializationScript$ -ScriptBlock {
+	$selected$$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Body>
+  <Items>
+    <Item Guid="947a3087-c1fe-47c0-a4af-a15e7819e978" DisplayName="Tree Node: New">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="a3f053f4-8ec5-4334-b49b-9cf23a7a59e6" DisplayName="Tree Node: Drag &amp; Drop PowerPack File">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="0a3254ca-d400-443b-8b17-d74c8a0ff1a5" DisplayName="Tree Node: Create New PowerPack">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="aa8055cf-9ee3-423f-bb8c-70eb9cd0425d" DisplayName="Tree Node: Delete">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="7c14919d-49c9-4e89-a0cb-8b6288b1e1eb" DisplayName="Tree Node: Rename">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="72ec2ba9-8b97-4e19-889c-0227ba36c9d8" DisplayName="Tree Node: View Properties">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="907ae49b-8acf-4d65-a5a4-6bafbe3037dc" DisplayName="Tree Node: Change CmdLet">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="acaf7add-71e1-42b0-9e88-4b92abf70891" DisplayName="Tree Node: Change CmdLet Parameters">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="6b34bbba-938b-428a-a0a8-738a24d000c9" DisplayName="Tree Node: Change Script">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="05eaa182-aef1-4c44-bb65-d3f785e5e518" DisplayName="Tree Node: Change Icon">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="05972f24-16a8-4298-8db9-fc11612d8531" DisplayName="Tree Node: Move">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="73BB42E8-E22F-40de-A4B8-8CE414782400" DisplayName="Tree Node: PowerPacks">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="97458C14-D15A-484d-8E5A-3DEC308235EF" DisplayName="Tree Node: Description">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+	<Item Guid="D6DC6671-7C5C-4d0d-BCA0-3AAD937B57DE" DisplayName="Tree Node: Object ID">
+	  <Enabled>false</Enabled>
+	  <Visible>false</Visible>
+	</Item>
+    <Item Guid="CD3A6E41-A2B7-41F2-BEEC-E27DDA21A024" DisplayName="Tree Node: Visible in MobileShell">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="af5ba9c9-5ae1-44d0-bc6b-0e6e05331bde" DisplayName="Action: New">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="8604d119-be11-4b38-bc32-dfa322f581da" DisplayName="Action: Delete">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="20e92be2-6f9b-40da-8074-55c6e537770f" DisplayName="Action: Rename">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="f6e528ec-f7ad-4929-9e7a-c72e766c13b0" DisplayName="Action: View Properties">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="821a5cab-b739-48c0-88d8-f7df1bce7e3d" DisplayName="Action: Change CmdLet">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="f3a5246d-15d0-414e-b4b0-0fc509ccdd09" DisplayName="Action: Change CmdLet Parameters">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="5ed0ef06-a975-47a0-a0d3-3c87aa082bab" DisplayName="Action: Change Script">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="d93c8cca-1892-4c30-9ab1-e07b8c773896" DisplayName="Action: Change Icon">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="523598ab-0898-4f0d-9a8c-aef096d39184" DisplayName="Action: Make Default">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="F38CCE9B-1CEB-48b1-9242-323C87BC92C3" DisplayName="Action: Description">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="B96BBA1D-671A-4978-9ABB-96DCB57AEA03" DisplayName="Action: PowerPacks">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+	<Item Guid="8E52F6D9-3584-41ed-B2EE-97562094544D" DisplayName="Action: Object ID">
+	  <Enabled>false</Enabled>
+	  <Visible>false</Visible>
+	</Item>
+	<Item Guid="EBA50578-D6F7-4a3c-A9C9-E791E44412B4" DisplayName="Action: Modify Types">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="CCB2B7FD-117C-4799-99F1-062E61F3189E" DisplayName="Action: Add Types">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="0D2CC5BE-95F0-4613-AE19-CDEDE9754C67" DisplayName="Action: Remove Types">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="3610217B-7F88-4fac-A0CE-FE988F4875CC" DisplayName="Action: Require Selection">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="F3575A16-16A3-494e-B5C4-9B9A23685478" DisplayName="Action: Display Results">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="A342FB82-6D29-48E5-A77F-A1F7F000217C" DisplayName="Action: Visible in MobileShell">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="6D5FC321-8265-4fbf-8C95-617A1197EF32" DisplayName="Action: Execute">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="B429DF05-FF7F-4b54-BBDA-D860E89F88A6" DisplayName="Action: Change Category">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="c7567ea8-29dc-445c-9ad6-a9c24ad0cb10" DisplayName="Action: Change Order">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="7E6A339B-EB75-4c52-9E53-692D20AE242E" DisplayName="Action Category: New">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="FAE310EC-1343-48be-8C0E-4CBA0255D006" DisplayName="Action Category: Rename">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="0DC68271-9082-4464-AF6A-32A011A06724" DisplayName="Action Category: Reorder">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="da4bfe82-bf2b-4919-be2d-2836239703ec" DisplayName="Results Grid: Change Columns List">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="029de5c2-abf0-4b60-b7c7-777f03a2d4f4" DisplayName="Results Grid: Resize Columns">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="70c524aa-b81c-4f21-9165-3277e0acd0b3" DisplayName="Results Grid: Reorder Columns">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="b8b765bf-741f-4e70-8283-86cbd992ee89" DisplayName="Results Grid: Change Sorting">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="c82baf05-30e2-4125-b0ad-ac94ab8375fa" DisplayName="Results Grid: Change Object Icon">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="C4DBBB4C-B819-4eac-A6D0-6FA1D212A839" DisplayName="UI: Lock Dockable windows">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="0315c41b-d0b0-45e9-97c6-5fc36bdf8bfc" DisplayName="UI: Add/Remove PowerShell Libraries">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="39866bdb-6d88-4c20-ae73-46a3114d7e83" DisplayName="UI: Show/Hide Tree">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="0ebf589f-d764-403b-82ab-a65fd9e7bfec" DisplayName="UI: Show/Hide Actions">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="BEC66CE5-2D17-49f0-A151-76F6BD8B1CD2" DisplayName="UI: PowerShell Code Tab">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="b80648f2-a389-434f-a963-47087d3c3bf0" DisplayName="UI: Check For Updates">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="ffa536dc-3dcd-448b-819a-b9d9de2d6157" DisplayName="UI: Invite Friends">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="bf12e4d3-1b43-4b68-a85b-7d880e6ad32e" DisplayName="UI: Start Script Editor">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="4c927ebc-e6ea-4f8f-b20f-7416a2cefb35" DisplayName="UI: Start PowerShell Console">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="0cd4418f-9dca-4994-8b10-ed496ff44abe" DisplayName="UI: Change Options">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="b64bae80-945a-408e-a434-6083e7934bc4" DisplayName="UI: PowerPack Management">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+	<Item Guid="799BFCED-D02B-4ff9-87E0-586A8ECB4B27" DisplayName="UI: Configure Snapshots">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="51cac355-288b-4dcf-bbeb-a97b319426dc" DisplayName="PowerPack Management: Import">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="CA1A9C26-F8FF-41E8-991B-B4A73A65BC38" DisplayName="PowerPack Management: Search">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="c3222c28-0c21-4d6f-812b-598a8ab40735" DisplayName="PowerPack Management: Export">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="97e86827-6174-41b9-ac52-684c7a250f18" DisplayName="PowerPack Management: Check For Update">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="5a252643-1b2a-4b62-9049-61ef8ab5b124" DisplayName="PowerPack Management: Remove">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="e85f96a8-02f3-4e09-9d19-5840e7a2c7a5" DisplayName="PowerPack Management: Edit">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="B596018A-6F38-4b93-81FD-331032E23EEB" DisplayName="Change Options: Language Change">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="076BAC31-7260-45ff-957A-7C18AA159A92" DisplayName="Change Options: Download More Language">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="9CF14C6D-D237-4c9c-9E6D-719A3C1F7182" DisplayName="Change Options: Update Product">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="0BE5169E-2611-41ec-83EB-F31E731319AB" DisplayName="Change Options: Update PowerPack">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="6F8AA79C-16CA-4dbe-B305-0807D7358954" DisplayName="Change Options: Create Snapshot">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+	<Item Guid="A11E9B2A-9A7C-431c-8362-73A1AA6A6C85" DisplayName="HtmlPage: New/Edit Html Page">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+	<Item Guid="269226B8-D530-4018-A7A0-E2814C7EE57E" DisplayName="HtmlPage: Clear Html Page">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+	<Item Guid="9285B124-A8F7-49ef-ACA8-A922D7B524AF" DisplayName="HtmlPage: MenuItem/Tab View">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="3BF8D2CD-4358-47fc-B4D3-5BB3632939BE" DisplayName="ChartPage: New Preset">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="3C93252A-848F-4269-93F1-DAC7720DBCB7" DisplayName="ChartPage: Delete Preset">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="AD1A0784-D99F-458b-A020-DBB87D02B044" DisplayName="ChartPage: Customize Preset">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="D6E54F13-5DA1-43fe-A646-7E22F76AA30C" DisplayName="ChartPage: Save as Image">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="7B451A75-8BEB-4508-99DF-D0913173DCEA" DisplayName="ChartPage: Print">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+    <Item Guid="B8C9B505-DDD7-464f-B198-CA4B9E184AF6" DisplayName="ChartPage: Select Preset">
+      <Enabled>true</Enabled>
+      <Visible>true</Visible>
+    </Item>
+  </Items>
+</Body>

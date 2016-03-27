@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>for (reverse)</Title>
+      <Shortcut>forr</Shortcut>
+      <Description>Insert a reverse for loop statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>index</ID>
+          <Default>$index</Default>
+          <ToolTip>Variable that will hold the current index</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>count</ID>
+          <Default>$count</Default>
+          <ToolTip>Value expression that defines the starting index</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[for ($index$ = $count$; $index$ -gt 0; $index$--) {
+	$selected$$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Basic</Title>
+      <Shortcut>fx</Shortcut>
+      <Description>Creating a new basic function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Name</ID>
+          <Default>Name</Default>
+          <ToolTip>The name of the function</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ParameterA</ID>
+          <Default>$Name</Default>
+          <ToolTip>Variable to accept input for the first parameter</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ParameterB</ID>
+          <Default>$Status</Default>
+          <ToolTip>Variable to accept input for the second parameter</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[function $Name$ {
+	param(
+		$ParameterA$,
+		$ParameterB$
+	)
+
+	$selected$$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+
+  Actipro UIStudio Dock Controls
+  Copyright (c) 2001-2006 Actipro Software LLC.  All rights reserved.
+  http://www.ActiproSoftware.com/Products/DotNet/
+
+-->
+<ToolWindowLayout Version="1.0">
+	<LayoutData>
+		<HostContainerControl>
+			<ToolWindowContainer Dock="Left" Size="238, 707" SelectedToolWindowGuid="ef131f3d-da7c-4cc7-9b7d-cf0639a62404">
+				<ToolWindow Key="Navigation Tree" Guid="ef131f3d-da7c-4cc7-9b7d-cf0639a62404" DockedSize="234, 200" ImageIndex="-1" Text="Navigation Tree" TitleBarText="Navigation Tree">
+					<AutoHideStateInfo RootDock="Left" />
+					<DockedInsideHostStateInfo RootDock="Left" IsAttached="False" />
+					<DockedOutsideHostStateInfo IsAttached="False" />
+				</ToolWindow>
+			</ToolWindowContainer>
+		</HostContainerControl>
+		<AutoHide Dock="Left" />
+		<AutoHide Dock="Right" />
+		<AutoHide Dock="Top" />
+		<AutoHide Dock="Bottom" />
+		<TabbedDocuments Orientation="Horizontal">
+			<ToolWindow Key="9285b124-a8f7-49ef-aca8-a922d7b524af" Guid="65506799-805b-4186-b288-6d98fab8087b" DockedSize="200, 395" ImageIndex="-1" Text="Details" TitleBarText="Details" TabbedMdiContainerIndex="0">
+				<AutoHideStateInfo RootDock="Top" />
+				<DockedInsideHostStateInfo RootDock="Top" IsAttached="True">
+					<AttachedToAfter Guid="bf146fb8-e00d-4c45-bae2-4c19e0de90bf" />
+					<AttachedToAfter Guid="0ad2c330-a2bd-4931-a2aa-a1982e155746" />
+					<AttachedToAfter Guid="da34a76f-5630-410d-a671-2b01f8e6f631" />
+					<DockedBy Guid="ef131f3d-da7c-4cc7-9b7d-cf0639a62404" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+					<DockedBy Guid="1f2dd307-8a13-4016-a936-e58c735c4a94" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+				</DockedInsideHostStateInfo>
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+		</TabbedDocuments>
+		<FloatingContainers />
+		<Hidden>
+			<ToolWindow Key="Action Pane" Guid="1f2dd307-8a13-4016-a936-e58c735c4a94" State="DockableInsideHost" ImageIndex="-1" Text="Actions" TitleBarText="Actions">
+				<AutoHideStateInfo RootDock="Right" />
+				<DockedInsideHostStateInfo RootDock="Right" IsAttached="False" />
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+			<ToolWindow Key="Result" Guid="bf146fb8-e00d-4c45-bae2-4c19e0de90bf" State="TabbedDocument" DockedSize="200, 395" ImageIndex="-1" Text="Results" TitleBarText="Results">
+				<AutoHideStateInfo RootDock="Top" />
+				<DockedInsideHostStateInfo RootDock="Top" IsAttached="True">
+					<AttachedToBefore Guid="0ad2c330-a2bd-4931-a2aa-a1982e155746" />
+					<AttachedToBefore Guid="da34a76f-5630-410d-a671-2b01f8e6f631" />
+					<AttachedToBefore Guid="65506799-805b-4186-b288-6d98fab8087b" />
+					<DockedBy Guid="ef131f3d-da7c-4cc7-9b7d-cf0639a62404" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+					<DockedBy Guid="1f2dd307-8a13-4016-a936-e58c735c4a94" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+				</DockedInsideHostStateInfo>
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+			<ToolWindow Key="History" Guid="0ad2c330-a2bd-4931-a2aa-a1982e155746" State="TabbedDocument" DockedSize="200, 395" ImageIndex="-1" Text="PowerShell Script" TitleBarText="PowerShell Script">
+				<AutoHideStateInfo RootDock="Top" />
+				<DockedInsideHostStateInfo RootDock="Top" IsAttached="True">
+					<AttachedToBefore Guid="da34a76f-5630-410d-a671-2b01f8e6f631" />
+					<AttachedToBefore Guid="65506799-805b-4186-b288-6d98fab8087b" />
+					<AttachedToAfter Guid="bf146fb8-e00d-4c45-bae2-4c19e0de90bf" />
+					<DockedBy Guid="ef131f3d-da7c-4cc7-9b7d-cf0639a62404" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+					<DockedBy Guid="1f2dd307-8a13-4016-a936-e58c735c4a94" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+				</DockedInsideHostStateInfo>
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+			<ToolWindow Key="Chart" Guid="da34a76f-5630-410d-a671-2b01f8e6f631" State="TabbedDocument" DockedSize="200, 395" ImageIndex="-1" Text="Chart" TitleBarText="Chart">
+				<AutoHideStateInfo RootDock="Top" />
+				<DockedInsideHostStateInfo RootDock="Top" IsAttached="True">
+					<AttachedToBefore Guid="65506799-805b-4186-b288-6d98fab8087b" />
+					<AttachedToAfter Guid="bf146fb8-e00d-4c45-bae2-4c19e0de90bf" />
+					<AttachedToAfter Guid="0ad2c330-a2bd-4931-a2aa-a1982e155746" />
+					<DockedBy Guid="ef131f3d-da7c-4cc7-9b7d-cf0639a62404" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+					<DockedBy Guid="1f2dd307-8a13-4016-a936-e58c735c4a94" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+				</DockedInsideHostStateInfo>
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+			<ToolWindow Key="Log" Guid="d9718c59-8a6b-46b4-9426-dfddeff73327" State="DockableInsideHost" DockedSize="200, 101" ImageIndex="-1" Text="Messages" TitleBarText="Messages">
+				<AutoHideStateInfo RootDock="Bottom" />
+				<DockedInsideHostStateInfo RootDock="Bottom" IsAttached="False">
+					<DockedBy Guid="ef131f3d-da7c-4cc7-9b7d-cf0639a62404" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+					<DockedBy Guid="1f2dd307-8a13-4016-a936-e58c735c4a94" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+				</DockedInsideHostStateInfo>
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+		</Hidden>
+	</LayoutData>
+	<CustomData />
+</ToolWindowLayout>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Enum (automatic values)</Title>
+      <Shortcut>enum</Shortcut>
+      <Description>Create a new enumeration type with automatic values</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Namespace</ID>
+          <Default>HyperV</Default>
+          <ToolTip>The name of the namespace you want associated with your the enumeration type that you are creating</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Name</ID>
+          <Default>VirtualDiskDriveType</Default>
+          <ToolTip>The name of the enumeration type that you are creating</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value1</ID>
+          <Default>Floppy</Default>
+          <ToolTip>The name of the first entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value2</ID>
+          <Default>CdRom</Default>
+          <ToolTip>The name of the second entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value3</ID>
+          <Default>DvdRom</Default>
+          <ToolTip>The name of the third entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value4</ID>
+          <Default>IdeHardDrive</Default>
+          <ToolTip>The name of the fourth entry in your new enumeration</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Value5</ID>
+          <Default>ScsiHardDrive</Default>
+          <ToolTip>The name of the fifth entry in your new enumeration</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[#region Define the $Name$ enumeration.
+
+if (-not ('PowerShellTypeExtensions.$Namespace$.$Name$' -as [System.Type])) {
+	$cSharpCode = @'
+using System;
+
+namespace PowerShellTypeExtensions
+{
+	namespace $Namespace$
+	{
+		public enum $Name$ : int
+		{
+			$Value1$,
+			$Value2$,
+			$Value3$,
+			$Value4$,
+			$Value5$
+		}
+	}
+}
+'@
+
+	Add-Type -TypeDefinition $cSharpCode
+}
+
+#endregion
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

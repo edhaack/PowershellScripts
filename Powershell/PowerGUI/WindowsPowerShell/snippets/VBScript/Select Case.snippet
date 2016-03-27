@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Select Case</Title>
+      <Shortcut>selectcase</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Select Case statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>value</ID>
+          <Default>$value</Default>
+          <ToolTip>Value expression to compare</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>optionA</ID>
+          <Default>$optionA</Default>
+          <ToolTip>First value expression to test for equality</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>optionB</ID>
+          <Default>$optionB</Default>
+          <ToolTip>Second value expression to test for equality</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>optionC</ID>
+          <Default>$optionC</Default>
+          <ToolTip>Third value expression to test for equality</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[switch ($value$) {
+	$optionA$ {
+		$selected$$end$
+	}
+	$optionB$ {
+	}
+	$optionC$ {
+	}
+	default {
+	}
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

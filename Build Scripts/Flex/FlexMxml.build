@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BRE Flex Project nAnt Build File" basedir="." default="compileProject">
+
+	<!-- 
+	NOTES: 
+	
+	The Java Ant build script handles most of the build process here, due to more efficient handling
+	of the build process. Adobe offers Ant Tasks specifically (and only) for Ant that simply make the
+	process a lot faster.
+	
+	The purpose of this nAnt build file is to allow a master nAnt build file execute the Ant Build script
+	and have it build the Flex swc's and swf's along with the .NET projects/solutions.
+	
+	"Ant" needs to be extracted to a central location on the developer's and build machine. 
+	
+	-->
+	
+	<!-- Properties -->
+	
+	<property name="ANT_HOME" value="C:\apps\Ant\apache-ant-1.8.1" />
+	<property name="project.build.file" value=".\build\build.xml" />
+	
+	<!-- Properties -->
+	
+
+	<!-- Compile Project ======================================== -->
+	
+	<target name="compileProject" 
+			depends="compileApplication" 
+			description="compiles application"/>
+	
+	
+	<!-- Compile Application ==================================== -->
+
+	<target name="compileApplication">
+		<echo>Compiling SWC To Deploy</echo>
+		
+		<!-- NOTE: This is the easiest way to handle building SWC's (via Java Ant) -->
+		<exec 
+            program="${ANT_HOME}\bin\ant.bat" 
+            workingdir="." 
+            commandline="-buildfile ${project.build.file} build"
+            failonerror="false"
+            resultproperty="ant.exit.code"
+          />
+		
+		<echo>Compiled SWF To Deploy</echo>
+	</target>
+
+	
+</project>

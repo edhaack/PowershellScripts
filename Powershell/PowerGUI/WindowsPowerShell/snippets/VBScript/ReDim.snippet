@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ReDim</Title>
+      <Shortcut>redim</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript ReDim statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>array</ID>
+          <Default>$array</Default>
+          <ToolTip>The array you are adding to</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>newValues</ID>
+          <Default>@('yellow','orange','indigo','violet')</Default>
+          <ToolTip>The new values to add to the array</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$array$ =  @('red','green','blue')
+$array$ += $newValues$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

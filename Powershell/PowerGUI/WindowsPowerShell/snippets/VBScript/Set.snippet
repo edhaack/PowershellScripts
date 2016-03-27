@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Set</Title>
+      <Shortcut>set</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Set statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>object</ID>
+          <Default>$object</Default>
+          <ToolTip>The variable that will hold the instance of the object you are creating</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>typeName</ID>
+          <Default>System.Management.Automation.PSObject</Default>
+          <ToolTip>The name of the type of object you are creating an instance of</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$object$ = New-Object -TypeName $typeName$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

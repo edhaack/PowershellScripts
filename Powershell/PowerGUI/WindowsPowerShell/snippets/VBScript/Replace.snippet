@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Replace</Title>
+      <Shortcut>replace</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Replace function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>sourceString</ID>
+          <Default>"VBScript Rocks!"</Default>
+          <ToolTip>The string in which to replace every instance of a substring</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>stringToFind</ID>
+          <Default>"VBScript"</Default>
+          <ToolTip>The substring to search for</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>stringToReplaceWith</ID>
+          <Default>"PowerShell"</Default>
+          <ToolTip>The replacement substring</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = $sourceString$ -replace $stringToFind$,$stringToReplaceWith$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

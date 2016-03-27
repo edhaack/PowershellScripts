@@ -1,0 +1,45 @@
+# Copyright (c) 1993-1999 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+127.0.0.1       localhost
+192.168.5.21	db1		db1.xceligent.local
+192.168.5.22	db2		db2.xceligent.local
+192.168.5.23	db3 		db3.xceligent.local
+192.168.5.106	web0		web0.xceligent.local
+192.168.5.101	web1		web1.xceligent.local
+192.168.5.102	web2		web2.xceligent.local
+192.168.5.103	web3		web3.xceligent.local
+192.168.5.105	web4		web4.xceligent.local
+192.168.5.107	web7		web7.xceligent.local
+192.168.5.109	state1	state1.xceligent.com
+192.168.50.124	LocalWebServer
+192.168.50.120  cdx             cdx.xceligent.com
+192.168.50.124  cdx4            cdx4.xceligent.com
+192.168.50.80	vt		vt.xceligent.com
+192.168.5.26	xdb1		xdb1.xceligent.local
+192.168.5.27	xdb2		xdb2.xceligent.local
+192.168.5.50	esx0010.netstandard.com
+192.168.5.51	esx0011.netstandard.com
+192.168.5.52	esx0012.netstandard.com
+192.168.5.53	esx0013.netstandard.com
+
+192.168.50.221 reportgen
+192.168.50.221	reportgen.xceligent.com
+192.168.50.126	cdx3
+192.168.50.126	cdx3.xceligent.com
+192.168.50.126	cdxairtest.xceligent.com

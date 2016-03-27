@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>TypeName</Title>
+      <Shortcut>typename</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript TypeName function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the type name</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>object</ID>
+          <Default>$object</Default>
+          <ToolTip>The variable containing the object from which we want to retrieve the type name</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$result$ = $(if ($object$) {$object$.GetType().Name})$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

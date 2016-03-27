@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Pipeline</Title>
+      <Shortcut>fxpipe</Shortcut>
+      <Description>Create a new function that works in a pipeline</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Name</ID>
+          <Default>Test-Pipeline</Default>
+          <ToolTip>The name of the function</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Type</ID>
+          <Default>[System.String[]]</Default>
+          <ToolTip>The type of input accepted from the pipeline</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>OutputType</ID>
+          <Default>[System.String]</Default>
+          <ToolTip>The type of output that will be returned by the function</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[function $Name$ {
+	[CmdletBinding()]
+	[OutputType($OutputType$)]
+	param(
+		[Parameter(ValueFromPipeline=$true)]
+		[ValidateNotNullOrEmpty()]
+		$Type$
+		$InputObject
+	)
+	begin {
+		try {
+		} catch {
+			throw
+		}
+	}
+	process {
+		try {
+			"Value from pipeline: $InputObject"
+			$selected$$end$
+		} catch {
+			throw
+		}
+	}
+	end {
+		try {
+		} catch {
+			throw
+		}
+	}
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

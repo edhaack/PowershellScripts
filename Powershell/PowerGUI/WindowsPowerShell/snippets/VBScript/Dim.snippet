@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Dim</Title>
+      <Shortcut>dim</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Dim statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>variableName</ID>
+          <Default>$variableName</Default>
+          <ToolTip>The name of the variable you are declaring</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$variableName$ = $null$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>InputBox Dialog</Title>
+      <Shortcut>inputboxd</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript InputBox function when you absolutely want a dialog box to be shown</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>title</ID>
+          <Default>'Enter Favorite Website'</Default>
+          <ToolTip>The title to display in the input box</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>message</ID>
+          <Default>'Please enter the address of your favorite website in the space provided.'</Default>
+          <ToolTip>The message to display in the input box</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>default</ID>
+          <Default>'http://www.poshoholic.com'</Default>
+          <ToolTip>The default value for the input box</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[################################################################################
+# This snippet requires that you have the free PshX-SAPIEN snapin created by
+# SAPIEN Technologies installed and registered on your computer. You can
+# download this snapin by opening this link in your web browser:
+# http://www.sapien.com/download.aspx?file=pshx
+################################################################################
+Add-PSSnapin -Name PshX-SAPIEN
+$result$ = Read-InputBox `
+	-Title $title$ `
+	-Message $message$ `
+	-Default $default$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

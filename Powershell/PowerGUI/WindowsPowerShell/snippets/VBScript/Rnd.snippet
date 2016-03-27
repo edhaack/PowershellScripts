@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Rnd</Title>
+      <Shortcut>rnd</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Rnd function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>generator</ID>
+          <Default>$generator</Default>
+          <ToolTip>Variable to hold the random number generator object</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>minimumValue</ID>
+          <Default>1</Default>
+          <ToolTip>The lowest possible random value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>maximumValue</ID>
+          <Default>100</Default>
+          <ToolTip>The highest possible random value</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$generator$ = New-Object -TypeName System.Random
+$result$ = $generator$.Next($minimumValue$,$maximumValue$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

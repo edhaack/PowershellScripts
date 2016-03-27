@@ -1,0 +1,21 @@
+<XCopyProject name="Update_Demo_vWebD">
+  <items>
+    <item type="dir" source="d:\deployment\Rollout\Production\xceligentApp" destination="\\vwebD\d$\Inetpub\Demo\xceligentApp" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\VerifiedSaleComps" destination="\\vwebD\d$\Inetpub\Demo\VerifiedSaleComps" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\tenantApp" destination="\\vwebD\d$\Inetpub\Demo\tenantApp" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\PrivateBrandingCode" destination="\\vwebD\d$\Inetpub\Demo\PrivateBrandingCode" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\CDX" destination="\\vwebD\d$\Inetpub\Demo\CDX" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\ReportPortalService" destination="\\vwebD\d$\Inetpub\Demo\ReportPortalService" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\Production\global.asa" destination="\\vwebD\d$\Inetpub\Demo\global.asa" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\VintageReportServer\global_config.asp" destination="\\vwebD\d$\Inetpub\Demo\global_config.asp" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\VintageReportServer\CDX\web.config" destination="\\vwebD\d$\Inetpub\Demo\CDX\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\VintageReportServer\ReportPortalService\web.config" destination="\\vwebD\d$\Inetpub\Demo\ReportPortalService\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\VintageReportServer" destination="\\vwebD\d$\The Build Config Files\Demo Build Config Files" differential="false" deletedest="true" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\version.txt" destination="\\vwebD\d$\The Build Config Files\version.txt" differential="false" deletedest="true" wildcard="" />
+    <item type="dir" source="D:\Deployment\Rollout\Components" destination="\\vwebD\d$\components" differential="true" deletedest="false" wildcard="" />
+  </items>
+  <actions>
+    <action type="0" machinename="vwebd" relatestoitem="-1" occurs="beforeproject" />
+    <action type="1" machinename="vwebd" relatestoitem="-1" occurs="afterproject" />
+  </actions>
+</XCopyProject>

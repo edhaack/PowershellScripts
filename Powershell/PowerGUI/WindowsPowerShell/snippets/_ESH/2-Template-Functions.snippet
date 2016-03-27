@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Add Basic Template Functions</Title>
+      <Shortcut />
+      <Description>Main template for basic functions</Description>
+      <HelpUrl />
+      <Author>ESH</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Keywords />
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>param</ID>
+          <ToolTip />
+          <Default>ParameterName</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="xml" Kind="any" Delimiter="$"><![CDATA[
+# BEGIN Parameters ===========================================
+Param (
+	[Parameter(Mandatory=$True)]
+	[ValidateNotNull()]
+	[string] $$param$
+)
+# END Parameters ===========================================
+
+# BEGIN VARIABLES ===========================================
+$scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
+$scriptName = $MyInvocation.MyCommand.Name
+$startTime = Get-Date
+$timeDateStamp = $(Get-Date -f yyyy-MM-dd)
+$logFile = "$scriptName-$timeDateStamp.log"
+
+# BEGIN FUNCTIONS ===========================================
+function Main()
+{
+
+}
+
+function ShowScriptBegin()
+{
+	cls
+	Start-Transcript -path $logFile -append
+	"
+	Script Start-Time: $startTime
+	"
+}
+
+function ShowScriptEnd()
+{
+	$endTime = Get-Date
+	$elapsedTime = $endTime - $startTime
+	"
+	Complete at: $endTime
+
+	Duration:
+	{2} hours, {0} minute(s) and {1} second(s)" -f $elapsedTime.Minutes, $elapsedTime.Seconds, $elapsedTime.Hours
+	Stop-Transcript
+	
+	Write-Host "Press any key to continue ..."
+	$x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+}
+# END FUNCTIONS ===========================================
+
+# BEGIN SCRIPT ===========================================
+ShowScriptBegin
+
+Main
+
+ShowScriptEnd
+# END SCRIPT ===========================================
+]]>
+</Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

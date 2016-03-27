@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="Promote" default="promote">
+	<property name="website.target" value="\\TESTIIS2008\inetpub\JakobiPortal\Portal" />
+	<property name="website.source" value="%teamcity.build.checkoutDir%\JakobiPortal/Jakobi2012Portal2/PrecompiledWeb/Jakobi2012Portal2" />
+
+    <target name="promote" depends="clean,deploy"/>
+    
+    <target name="clean">
+    	<echo message="Clean the website: ${website.target}" />
+    	<!-- Clean the final website output -->
+    	<delete failonerror="false" verbose="true">
+			<fileset basedir="${website.target}">
+				<include name="**/*"/>
+				<exclude name="**/Repository/**/*" />
+				<exclude name="**/web.config" />
+			</fileset>
+		</delete>
+    </target>
+	
+	<target name="deploy">
+		<echo message="Deploying to dev web server."/>
+		<echo message="From: ${website.source}"/>
+		<echo message="To: ${website.target}"/>
+		<copy todir="${website.target}" includeemptydirs="true" overwrite="true">
+			<fileset basedir="${website.source}">
+				<include name="**/*" />
+			</fileset>
+		</copy>	
+	</target>
+</project>

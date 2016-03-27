@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>foreach</Title>
+      <Shortcut>foreach</Shortcut>
+      <Description>Insert a foreach loop statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>item</ID>
+          <Default>$item</Default>
+          <ToolTip>Variable that will hold the current item</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>collection</ID>
+          <Default>$collection</Default>
+          <ToolTip>Value expression that defines the collection of items that will be iterated through</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[foreach ($item$ in $collection$) {
+	$selected$
+	$item$$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

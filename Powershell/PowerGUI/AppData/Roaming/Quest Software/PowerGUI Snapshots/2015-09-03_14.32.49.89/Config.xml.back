@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration id="57cbb640-6232-4995-99aa-f68bb734e51e">
+  <items>
+    <container name="HostFactory" id="0b8eebbc-08c6-472b-ae1b-57f1a96f3467">
+      <items>
+        <item name="default ui language" id="08a2a9f3-6d8e-49cc-a59a-36f34166f603">
+          <value>en-US</value>
+        </item>
+        <item name="WPScriptEditorDateModification" id="e38e5775-25d9-43ac-a995-3ba62d8eded1">
+          <value>04/30/2013 21:30:38</value>
+        </item>
+      </items>
+    </container>
+    <container name="PowerShell Engine Wrapper" id="89857ec6-a4ab-40d6-80e2-9edd6588e192">
+      <items>
+        <container name="Added" id="fd4a7e22-4872-4490-b6c1-2b3d468538b1">
+          <items>
+            <container name="Add-on.CallStackWindow" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\AppData\Roaming\Quest Software\PowerGUI\Add-ons\Add-on.CallStackWindow\Add-on.CallStackWindow.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4">
+                  <value>Kirk Munro</value>
+                </item>
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.20</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptEditorEssentials" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\AppData\Roaming\Quest Software\PowerGUI\Add-ons\Add-on.ScriptEditorEssentials\Add-on.ScriptEditorEssentials.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4">
+                  <value>Kirk Munro</value>
+                </item>
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>3.0.0.76</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptExplorer" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\AppData\Roaming\Quest Software\PowerGUI\Add-ons\Add-on.ScriptExplorer\Add-on.ScriptExplorer.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4">
+                  <value>Adam Driscoll</value>
+                </item>
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.1.9</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptSigning" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ScriptSigning\Add-on.ScriptSigning.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.1.0.5</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptTemplate" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ScriptTemplate\Add-on.ScriptTemplate.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="PSWorkflow" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSWorkflow\PSWorkflow.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>2.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="PSWorkflowUtility" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Windows\system32\WindowsPowerShell\v1.0\Modules\PSWorkflowUtility\PSWorkflowUtility.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="RemoteDesktop" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Windows\system32\WindowsPowerShell\v1.0\Modules\RemoteDesktop\RemoteDesktop.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>2.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="WebAdministration" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Windows\system32\WindowsPowerShell\v1.0\Modules\WebAdministration\WebAdministration.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.BlueConsole" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.BlueConsole\Add-on.BlueConsole.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>2.0.1.4</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ClearConsole" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ClearConsole\Add-on.ClearConsole.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.1</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.Transcription" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.Transcription\Add-on.Transcription.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.4</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.CallStackWindow" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.CallStackWindow\Add-on.CallStackWindow.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.20</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.HelpBrowser" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.HelpBrowser\Add-on.HelpBrowser.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.PowerGUIOnline" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.PowerGUIOnline\Add-on.PowerGUIOnline.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.1.2</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptExplorer" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ScriptExplorer\Add-on.ScriptExplorer.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.1.9</value>
+                </item>
+              </items>
+            </container>
+            <container name="ModuleManager" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\ModuleManager\ModuleManager.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>2.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="pki" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Windows\system32\WindowsPowerShell\v1.0\Modules\pki\pki.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="ActiveDirectory" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\windows\system32\windowspowershell\v1.0\Modules\ActiveDirectory\ActiveDirectory.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+          </items>
+        </container>
+        <container name="Loaded" id="cd3be4a0-5f1a-437d-a2df-cd0e56b40ba6">
+          <items>
+            <container name="ActiveDirectory" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\windows\system32\windowspowershell\v1.0\Modules\ActiveDirectory\ActiveDirectory.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.BlueConsole" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.BlueConsole\Add-on.BlueConsole.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>2.0.1.4</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.CallStackWindow" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\AppData\Roaming\Quest Software\PowerGUI\Add-ons\Add-on.CallStackWindow\Add-on.CallStackWindow.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.20</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.CallStackWindow" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.CallStackWindow\Add-on.CallStackWindow.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.20</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ClearConsole" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ClearConsole\Add-on.ClearConsole.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.1</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.PowerGUIOnline" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.PowerGUIOnline\Add-on.PowerGUIOnline.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.1.2</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptEditorEssentials" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\AppData\Roaming\Quest Software\PowerGUI\Add-ons\Add-on.ScriptEditorEssentials\Add-on.ScriptEditorEssentials.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>3.0.0.76</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptExplorer" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\AppData\Roaming\Quest Software\PowerGUI\Add-ons\Add-on.ScriptExplorer\Add-on.ScriptExplorer.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.1.9</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptExplorer" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ScriptExplorer\Add-on.ScriptExplorer.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.1.9</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptSigning" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ScriptSigning\Add-on.ScriptSigning.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.1.0.5</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.ScriptTemplate" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.ScriptTemplate\Add-on.ScriptTemplate.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.0</value>
+                </item>
+              </items>
+            </container>
+            <container name="Add-on.Transcription" type="Module">
+              <items>
+                <item name="Path" id="3a070803-5fe6-432e-8d58-e69ab46eefe3">
+                  <value>C:\Users\ehaack\Documents\WindowsPowerShell\Modules\Add-on.Transcription\Add-on.Transcription.psd1</value>
+                </item>
+                <item name="Author" id="514dab30-b238-4ae1-a6ac-38d5c3cfbed4" />
+                <item name="Version" id="8620403a-d313-44bb-8101-8b3090409c34">
+                  <value>1.0.0.4</value>
+                </item>
+              </items>
+            </container>
+          </items>
+        </container>
+      </items>
+    </container>
+    <container name="Properties" id="5a5f9801-d488-46f6-ba7d-ef634fee739c">
+      <items>
+        <container id="f2ede2df-4015-48e5-be85-6bb391e9cdd5">
+          <items>
+            <item name="LogLevel">
+              <value>Error</value>
+            </item>
+            <item name="EraseLogOnExit">
+              <value>True</value>
+            </item>
+            <item name="LogAge">
+              <value>7</value>
+            </item>
+          </items>
+        </container>
+        <container id="d25d4280-62f9-4b3f-8130-fe577b8f0c99">
+          <items>
+            <item name="Maximize">
+              <value>True</value>
+            </item>
+            <item name="Size">
+              <value>200;0</value>
+            </item>
+          </items>
+        </container>
+        <container id="427ea05a-7493-4f21-9a2c-1eb15b923cdf">
+          <items>
+            <item name="Maximize">
+              <value>True</value>
+            </item>
+            <item name="Size">
+              <value>200;0</value>
+            </item>
+          </items>
+        </container>
+        <container id="69e4a32c-f4ff-4014-8782-313abf222fe2">
+          <items>
+            <item name="BaloonShowed">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="20aa8170-2281-4f28-9d4a-1f2371fcbc7b">
+          <items>
+            <item name="LogClosedByUser">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="11e49465-8a28-42f6-b27c-91c8296c6eca">
+          <items>
+            <item name="ActionClosedByUser">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+      </items>
+    </container>
+    <container name="Navigation Tree" id="b3b2283e-6f58-40c6-86b6-f01cd7f060fa">
+      <items>
+        <container name="" id="c3c2f139-eb17-4cf4-87de-2575eaead077" type="Root@" />
+      </items>
+    </container>
+    <container name="Icons" id="9355c471-85b2-4b9a-92db-69873837cd8d" />
+    <container name="Types" id="37fc9e95-a3a2-4f53-a2d4-d29fe752995c" />
+    <container name="UI View" id="6daa7380-b4f9-422e-a7b7-1a86193e14eb" />
+    <container name="History View" id="2d441a77-4e44-43ca-b236-56881bf389a5" />
+    <container name="Actions" id="1ef02fe0-c6fc-4cdc-88bc-a9e4313bee18" />
+    <container name="deleted" id="529c50fd-bdde-4a89-879d-702ba64b6889" />
+    <container name="version" id="3a908f4a-c672-4883-8b26-18bb3aac1638">
+      <value>3.8.0.129</value>
+      <items>
+        <item name="update" id="7600fdf1-ca11-4145-87fa-f3bc6b49d0f2">
+          <value>http://community-downloads.quest.com/powergui/update.xml</value>
+        </item>
+      </items>
+    </container>
+    <container name="CmdLetParamCtrls" id="f1116366-fbad-4e56-9112-bbeaf47d1a1e">
+      <items>
+        <container name="get-wmiobject">
+          <items>
+            <item name="class">
+              <value>CollectionWMIClasses</value>
+            </item>
+          </items>
+        </container>
+      </items>
+    </container>
+  </items>
+</configuration>

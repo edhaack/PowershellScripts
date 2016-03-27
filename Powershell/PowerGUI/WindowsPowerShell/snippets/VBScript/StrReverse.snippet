@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>StrReverse</Title>
+      <Shortcut>strreverse</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript StrReverse function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result string</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>stringToReverse</ID>
+          <Default>$stringToReverse</Default>
+          <ToolTip>The string to reverse</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = [String]::Join($null,$stringToReverse$[($stringToReverse$.Length - 1)..0])$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

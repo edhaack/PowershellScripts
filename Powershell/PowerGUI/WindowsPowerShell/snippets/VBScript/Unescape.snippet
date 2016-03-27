@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unescape</Title>
+      <Shortcut>unescape</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Unescape function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>stringToUnescape</ID>
+          <Default>'http%3a%2f%2fwww.powergui.org%2f'</Default>
+          <ToolTip>Value that identifies the string to unescape</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[[Reflection.Assembly]::LoadWithPartialName("System.Web") | Out-Null
+$result$ = [System.Web.HttpUtility]::UrlDecode($stringToUnescape$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

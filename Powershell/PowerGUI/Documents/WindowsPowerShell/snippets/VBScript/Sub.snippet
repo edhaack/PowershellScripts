@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Sub</Title>
+      <Shortcut>sub</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Sub statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Name</ID>
+          <Default>Name</Default>
+          <ToolTip>The name of the function</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ParameterA</ID>
+          <Default>$ParameterA</Default>
+          <ToolTip>Variable to hold the value of the first parameter</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ParameterB</ID>
+          <Default>$ParameterB</Default>
+          <ToolTip>Variable to hold the value of the second parameter</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[function $Name$ {
+	param(
+		$ParameterA$,
+		$ParameterB$
+	)
+
+	$selected$$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

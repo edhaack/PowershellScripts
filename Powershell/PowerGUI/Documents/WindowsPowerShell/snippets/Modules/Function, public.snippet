@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Function (public)</Title>
+      <Shortcut>fxpub</Shortcut>
+      <Description>Add a public (exported) advanced function to a module</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Name</ID>
+          <Default>Test-PublicFunction</Default>
+          <ToolTip>The name of the function</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>OutputType</ID>
+          <Default>[System.String]</Default>
+          <ToolTip>The type of object(s) returned by the function</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ParameterA</ID>
+          <Default>Name</Default>
+          <ToolTip>The name of the first parameter</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ParameterB</ID>
+          <Default>Index</Default>
+          <ToolTip>The name of the second parameter</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>Alias</ID>
+          <Default>tpf</Default>
+          <ToolTip>The alias to be associated with the function</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[function $Name$ {
+	[CmdletBinding()]
+	[OutputType($OutputType$)]
+	param(
+		[Parameter(Position=0, Mandatory=$true)]
+		[ValidateNotNullOrEmpty()]
+		[System.String[]]
+		$$ParameterA$,
+
+		[Parameter(Position=1)]
+		[ValidateNotNull()]
+		[System.Int32]
+		$$ParameterB$
+	)
+	begin {
+		try {
+		}
+		catch {
+		}
+	}
+	process {
+		try {
+			$selected$$end$
+		}
+		catch {
+		}
+	}
+	end {
+		try {
+		}
+		catch {
+		}
+	}
+}
+Export-ModuleMember -Function $Name$
+
+New-Alias -Name $Alias$ -Value $Name$ -ErrorAction SilentlyContinue
+if ($?) {
+	Export-ModuleMember -Alias $Alias$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>DateAdd</Title>
+      <Shortcut>dateadd</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript DateAdd function when used to add values to more than one date field</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfYears</ID>
+          <Default>$numberOfYears</Default>
+          <ToolTip>Value identifying the number of years to add</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfMonths</ID>
+          <Default>$numberOfMonths</Default>
+          <ToolTip>Value identifying the number of months to add</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfDays</ID>
+          <Default>$numberOfDays</Default>
+          <ToolTip>Value identifying the number of days to add</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfHours</ID>
+          <Default>$numberOfHours</Default>
+          <ToolTip>Value identifying the number of hours to add</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfMinutes</ID>
+          <Default>$numberOfMinutes</Default>
+          <ToolTip>Value identifying the number of minutes to add</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfSeconds</ID>
+          <Default>$numberOfSeconds</Default>
+          <ToolTip>Value identifying the number of seconds to add</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = (Get-Date).AddYears($numberOfYears$).AddMonths($numberOfMonths$).AddDays($numberOfDays$).AddHours($numberOfHours$).AddMinutes($numberOfMinutes$).AddSeconds($numberOfSeconds$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>StrComp</Title>
+      <Shortcut>strcomp</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript StrComp function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>firstString</ID>
+          <Default>$firstString</Default>
+          <ToolTip>The first string to compare</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>secondString</ID>
+          <Default>$secondString</Default>
+          <ToolTip>The second string to compare</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>caseInsensitive</ID>
+          <Default>$true</Default>
+          <ToolTip>Flag indicating whether we want to do a case insensitive or case sensitive comparison</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = [String]::Compare($firstString$,$secondString$,$caseInsensitive$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>DateAdd Minutes</Title>
+      <Shortcut>dateaddn</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript DateAdd function when used to add minutes</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfMinutes</ID>
+          <Default>$numberOfMinutes</Default>
+          <ToolTip>Value identifying the number of minutes to add</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = (Get-Date).AddMinutes($numberOfMinutes$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

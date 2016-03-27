@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>CreateObject</Title>
+      <Shortcut>createobject</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript CreateObject function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>comObject</ID>
+          <Default>$comObject</Default>
+          <ToolTip>Variable to store the COM object</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>objectType</ID>
+          <Default>Excel.Application</Default>
+          <ToolTip>Name</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$comObject$ = New-Object -ComObject $objectType$ -Strict
+$comObject$.Visible = $True$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Call (Function)</Title>
+      <Shortcut>callfx</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Call statement when using a function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>myFunction</ID>
+          <Default>MyFunction</Default>
+          <ToolTip>The name of the function to execute</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>firstParameter</ID>
+          <Default>$firstParameter</Default>
+          <ToolTip>The first parameter to pass to the ScriptBlock</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>secondParameter</ID>
+          <Default>$secondParameter</Default>
+          <ToolTip>The second parameter to pass to the ScriptBlock</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[function $myFunction$ {
+	param(
+		$firstParameter$,
+		$secondParameter$
+	)
+	$selected$$end$
+}
+
+$myFunction$ '1stValue' 2]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

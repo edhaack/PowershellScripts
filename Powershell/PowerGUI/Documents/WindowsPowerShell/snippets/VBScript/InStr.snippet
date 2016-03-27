@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>InStr</Title>
+      <Shortcut>instr</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript InStr function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>searchSource</ID>
+          <Default>$myString</Default>
+          <ToolTip>The string being searched</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>searchTarget</ID>
+          <Default>'PoSh'</Default>
+          <ToolTip>The string you are searching for</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$result$ = $searchSource$.IndexOf($searchTarget$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

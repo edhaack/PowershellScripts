@@ -1,0 +1,37 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20150406153927
+Username: XCELIGENT\ehaack
+RunAs User: XCELIGENT\ehaack
+Machine: EHAACK-NIMITZ (Microsoft Windows NT 6.3.9600.0)
+Host Application: C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19412
+**********************
+Transcript started, output file is TFS-UpdateBasicTemplate.ps1-2015-04-06.log
+
+	Script Start-Time: 04/06/2015 15:39:27
+
+D:\TFS\Portfolio\Product\CDX\Development\Development-Main\Xceligent.CDX\Xsl\ExtraExtra:
+BasicTemplate.xsl
+TF10139: The following check-in policies have not been satisfied:
+  You must associate this check-in with one or more work items.
+
+The policies have been overridden.
+D:\TFS\Portfolio\Product\CDX\Development\Development-Main\Xceligent.CDX\Xsl\ExtraExtra:
+Checking in edit: BasicTemplate.xsl
+
+Changeset #7142 checked in.
+D:\TFS\Portfolio\Product\CDX\Development\Development-Main\Xceligent.CDX\ExtraExtra\xsl:
+BasicTemplate.xsl
+TF10139: The following check-in policies have not been satisfied:
+  You must associate this check-in with one or more work items.
+
+The policies have been overridden.
+D:\TFS\Portfolio\Product\CDX\Development\Development-Main\Xceligent.CDX\ExtraExtra\xsl:
+Checking in edit: BasicTemplate.xsl
+
+Changeset #7143 checked in.
+**********************
+Windows PowerShell transcript end
+End time: 20150406154102
+**********************

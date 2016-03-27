@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>FormatNumber</Title>
+      <Shortcut>formatnumber</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript FormatNumber function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfDigitsAfterDecimal</ID>
+          <Default>7</Default>
+          <ToolTip>The number of digits to display after the decimal</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>valueToFormat</ID>
+          <Default>[Math]::PI</Default>
+          <ToolTip>The numeric value to format</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$result$ = '{0:N$numberOfDigitsAfterDecimal$}' -f $valueToFormat$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

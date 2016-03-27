@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>GetObject</Title>
+      <Shortcut>getobject</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript GetObject function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>myObject</ID>
+          <Default>$myObject</Default>
+          <ToolTip>Variable to store the new object</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>objectId</ID>
+          <Default>'WinNT://./administrators,group'</Default>
+          <ToolTip>A string that identifies the object you want to load</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[################################################################################
+# Note that to call GetObject in PowerShell you actually need to do it through
+# VB. It is not recommended to call GetObject in PowerShell unless there are no
+# other alternatives. In the default example for this snippet, instead of using
+# GetObject you could retrieve the local group object using the ADSI type
+# accelerator, like this:
+#    $myObject = [ADSI]'WinNT://./administrators,group'
+# This object is a little easier to use in PowerShell than the COM object that
+# is returned by using GetObject.
+################################################################################
+[Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
+$myObject$ = [Microsoft.VisualBasic.Interaction]::GetObject($objectId$,$null)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

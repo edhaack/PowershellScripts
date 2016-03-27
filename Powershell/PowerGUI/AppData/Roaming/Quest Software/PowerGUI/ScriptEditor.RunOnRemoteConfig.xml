@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RemoteConfiguration>
+  <RemoteConfigurations>
+    <RemoteConfiguration>
+      <Name>All computers in one location</Name>
+      <Description>All computers in one location (Quest AD cmdlets)</Description>
+      <ScriptComputerName>$location = Read-Host -Prompt ‘Enter the AD site location where you would like to run your script in the space provided.’
+Add-PSSnapin -Name Quest.ActiveRoles.ADManagement -ErrorAction SilentlyContinue
+Get-QADComputer -Location $location -SizeLimit 0 | Select-Object -ExpandProperty Name</ScriptComputerName>
+      <IsScriptComputerName>true</IsScriptComputerName>
+      <SessionOptions />
+    </RemoteConfiguration>
+    <RemoteConfiguration>
+      <Name>Computers listed in a text file</Name>
+      <Description>A list of computers stored in a text file</Description>
+      <ScriptComputerName>$filePath = "$([System.Environment]::GetFolderPath('MyDocuments'))\Computers.txt"
+(Get-Content -LiteralPath $filePath) -replace '(^\s+|\s+$)' -join "`n" -split "`n+"</ScriptComputerName>
+      <IsScriptComputerName>true</IsScriptComputerName>
+      <SessionOptions />
+    </RemoteConfiguration>
+    <RemoteConfiguration>
+      <Name>Domain controllers</Name>
+      <Description>All domain controllers in my current domain (Quest AD cmdlets)</Description>
+      <ScriptComputerName>Add-PSSnapin -Name Quest.ActiveRoles.ADManagement -ErrorAction SilentlyContinue
+Get-QADComputer -ComputerRole DomainController -SizeLimit 0 | Select-Object -ExpandProperty Name</ScriptComputerName>
+      <IsScriptComputerName>true</IsScriptComputerName>
+      <SessionOptions />
+    </RemoteConfiguration>
+    <RemoteConfiguration>
+      <Name>Exchange servers</Name>
+      <Description>All Exchange servers discovered in my environment (Quest AD cmdlets)</Description>
+      <ScriptComputerName>Add-PSSnapin -Name Quest.ActiveRoles.ADManagement -ErrorAction SilentlyContinue
+$rootDSE = Get-QADRootDSE
+Get-QADObject -Type msExchExchangeServer -SearchRoot $rootDSE.ConfigurationNamingContext -SizeLimit 0 | Select-Object -ExpandProperty Name
+</ScriptComputerName>
+      <IsScriptComputerName>true</IsScriptComputerName>
+      <SessionOptions />
+    </RemoteConfiguration>
+  </RemoteConfigurations>
+</RemoteConfiguration>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>DateSerial</Title>
+      <Shortcut>dateserial</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript DateSerial function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>year</ID>
+          <Default>2008</Default>
+          <ToolTip>Value that identifies the year</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>month</ID>
+          <Default>2</Default>
+          <ToolTip>Value that identifies the month</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>day</ID>
+          <Default>27</Default>
+          <ToolTip>Value that identifies the day</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$result$ = Get-Date -Year $year$ -Month $month$ -Day $day$ -Hour 0 -Minute 0 -Second 0$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

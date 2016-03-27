@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>LBound</Title>
+      <Shortcut>lbound</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript LBound function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>array</ID>
+          <Default>$array</Default>
+          <ToolTip>The array from which to retrieve the smallest available subscript in the specified dimension</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>dimension</ID>
+          <Default>0</Default>
+          <ToolTip>The dimension from which to retrieve the smallest available subscript in the specified array</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = $array$.GetLowerBound($dimension$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

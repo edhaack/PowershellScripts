@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <items>
+    <container name="Properties" id="5a5f9801-d488-46f6-ba7d-ef634fee739c">
+      <items>
+        <container id="f2ede2df-4015-48e5-be85-6bb391e9cdd5">
+          <items>
+            <item name="LogLevel">
+              <value>Error</value>
+            </item>
+            <item name="EraseLogOnExit">
+              <value>True</value>
+            </item>
+            <item name="LogAge">
+              <value>7</value>
+            </item>
+          </items>
+        </container>
+        <container id="d25d4280-62f9-4b3f-8130-fe577b8f0c99">
+          <items>
+            <item name="Maximize">
+              <value>True</value>
+            </item>
+            <item name="Size">
+              <value>200;0</value>
+            </item>
+          </items>
+        </container>
+        <container id="427ea05a-7493-4f21-9a2c-1eb15b923cdf">
+          <items>
+            <item name="Maximize">
+              <value>True</value>
+            </item>
+            <item name="Size">
+              <value>200;0</value>
+            </item>
+          </items>
+        </container>
+        <container id="69e4a32c-f4ff-4014-8782-313abf222fe2">
+          <items>
+            <item name="BaloonShowed">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="20aa8170-2281-4f28-9d4a-1f2371fcbc7b">
+          <items>
+            <item name="LogClosedByUser">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="11e49465-8a28-42f6-b27c-91c8296c6eca">
+          <items>
+            <item name="ActionClosedByUser">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="80d45d70-2760-4a51-88e9-1032f22a0885">
+          <items>
+            <item name="FontName">
+              <value>Courier New</value>
+            </item>
+            <item name="Size">
+              <value>10</value>
+            </item>
+            <item name="Italic">
+              <value>False</value>
+            </item>
+            <item name="Bold">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="555efc67-14ba-47c8-be79-95733814204a">
+          <items>
+            <item name="ViewColumnGuide">
+              <value>False</value>
+            </item>
+            <item name="ViewStatusBar">
+              <value>True</value>
+            </item>
+            <item name="ViewLineNumbers">
+              <value>True</value>
+            </item>
+          </items>
+        </container>
+        <container id="cd12da34-c5f0-4304-a785-bb9fe8c96b25">
+          <items>
+            <item name="NewRunspaceOnDebug">
+              <value>False</value>
+            </item>
+            <item name="LoadPSProfiles">
+              <value>True</value>
+            </item>
+            <item name="BreakIgnore">
+              <value>False</value>
+            </item>
+            <item name="IgnoreSignature">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="44c7a71c-2998-410d-be42-d5b02420baab">
+          <items>
+            <item name="Allow Only One Instance">
+              <value>True</value>
+            </item>
+            <item name="NotifyFileChangesOutSide">
+              <value>True</value>
+            </item>
+          </items>
+        </container>
+        <container id="d55acb6f-ccc6-49ce-8a90-d519aee14710">
+          <items>
+            <item name="1">
+              <value>D:\GitHub\DevOps\CDX-Scripts\CreateCDXWebsite.ps1</value>
+            </item>
+            <item name="2">
+              <value>C:\Users\ehaack\Google Drive\Professional\Work\Xceligent\CDX Setup\CreateCDXVirtualDirectories.ps1</value>
+            </item>
+            <item name="3">
+              <value>D:\GitHub\DevOps\CDX-Scripts\CreateCDXVirtualDirectories.ps1</value>
+            </item>
+            <item name="4">
+              <value>D:\GitHub\DevOps\DeploymentScripts\CDX-Suite\CDX-Suite-Production-Deployment-Via-Artifact.ps1</value>
+            </item>
+            <item name="5">
+              <value>D:\GitHub\DevOps\DeploymentScripts\DeployWebsiteFromTeamCity\DeployWebsiteFromTeamCityArtifact.ps1</value>
+            </item>
+          </items>
+        </container>
+        <container name="StartUpOptions" id="c8068094-414b-4ee6-b6fb-281ea66a20d2">
+          <items>
+            <item name="WhenEditorStarts">
+              <value>1</value>
+            </item>
+            <item name="SaveTabsAsked">
+              <value>False</value>
+            </item>
+            <item name="SaveBeforeExecute">
+              <value>True</value>
+            </item>
+            <item name="WelcomePage">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container name="TextEditorOptions" id="e70fa2a4-290a-4059-af00-a00d352a49e9">
+          <items>
+            <item name="AutoConvertTabsToSpaces">
+              <value>False</value>
+            </item>
+            <item name="TabSize">
+              <value>4</value>
+            </item>
+            <item name="AutoSavePeriod">
+              <value>60000</value>
+            </item>
+            <item name="AutoSaveTempFolder">
+              <value>True</value>
+            </item>
+          </items>
+        </container>
+        <container id="0b0e8b15-b291-4b39-a653-38de267fdeed">
+          <items>
+            <item name="VersionControlProvider">
+              <value>None</value>
+            </item>
+            <item name="ShowCheckInDialog">
+              <value>False</value>
+            </item>
+          </items>
+        </container>
+        <container id="cfddf523-d1f2-4692-9bd9-bf405fdbc0dd">
+          <items>
+            <item name="Maximize">
+              <value>False</value>
+            </item>
+            <item name="Size">
+              <value>638;497</value>
+            </item>
+          </items>
+        </container>
+        <container id="6d3f2339-9362-4dac-b5c6-db6980837c14">
+          <items>
+            <item name="Maximize">
+              <value>False</value>
+            </item>
+            <item name="Size">
+              <value>428;257</value>
+            </item>
+          </items>
+        </container>
+        <container id="02256a87-9587-4647-b262-1d86ce21daff">
+          <items>
+            <item name="Maximize">
+              <value>True</value>
+            </item>
+            <item name="Size">
+              <value>1936;1066</value>
+            </item>
+          </items>
+        </container>
+        <container id="007236be-20c0-49e7-914a-2f9f0cd34a56">
+          <items>
+            <item name="Maximize">
+              <value>False</value>
+            </item>
+            <item name="Size">
+              <value>508;692</value>
+            </item>
+          </items>
+        </container>
+        <container id="7e180316-ad94-4db0-a088-a0c21bd55d7b">
+          <items>
+            <item name="Maximize">
+              <value>False</value>
+            </item>
+            <item name="Size">
+              <value>522;686</value>
+            </item>
+          </items>
+        </container>
+      </items>
+    </container>
+  </items>
+</configuration>

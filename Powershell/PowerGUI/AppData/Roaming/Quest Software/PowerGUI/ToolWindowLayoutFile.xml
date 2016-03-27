@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!--
+
+  Actipro UIStudio Dock Controls
+  Copyright (c) 2001-2006 Actipro Software LLC.  All rights reserved.
+  http://www.ActiproSoftware.com/Products/DotNet/
+
+-->
+<ToolWindowLayout Version="1.0">
+	<LayoutData>
+		<HostContainerControl>
+			<ToolWindowContainer Dock="Bottom" Size="1392, 388" SelectedToolWindowGuid="431bb21e-8e0f-4e29-b01a-6be92a6f8289">
+				<ToolWindow Key="PowerShellConsole" Guid="431bb21e-8e0f-4e29-b01a-6be92a6f8289" CanBecomeDocument="False" DockedSize="477, 384" FloatingLocation="854, 775" ImageIndex="-1" Text="PowerShell Console">
+					<AutoHideStateInfo RootDock="Bottom" />
+					<DockedInsideHostStateInfo RootDock="Bottom" IsAttached="False">
+						<DockedBy Guid="179c969f-6af4-4dc4-9bcf-30db2aa916b5" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+						<DockedBy Guid="6d1b4c8a-93c3-4efe-8a33-f5f8e75106e2" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+						<DockedBy Guid="3571f354-ab86-40c9-98d8-68699bd2d6f4" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+						<DockedBy Guid="afe2d9e3-5ee8-4505-bcd1-022575c8ad02" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+						<DockedBy Guid="571e2195-8e2d-4f31-8d67-9475e62d7fd2" RootDock="Right" DockOperationType="LeftOuter" IsTopMost="True" />
+					</DockedInsideHostStateInfo>
+					<DockedOutsideHostStateInfo IsAttached="False" />
+				</ToolWindow>
+			</ToolWindowContainer>
+			<ToolWindowContainer Dock="Right" Size="528, 951" SelectedToolWindowGuid="3571f354-ab86-40c9-98d8-68699bd2d6f4">
+				<ToolWindow Key="Variables" Guid="3571f354-ab86-40c9-98d8-68699bd2d6f4" CanBecomeDocument="False" DockedSize="524, 588" ImageIndex="-1" Text="Variables">
+					<AutoHideStateInfo RootDock="Right" />
+					<DockedInsideHostStateInfo RootDock="Right" IsAttached="True">
+						<AttachedToBefore Guid="afe2d9e3-5ee8-4505-bcd1-022575c8ad02" />
+						<DockedBy Guid="571e2195-8e2d-4f31-8d67-9475e62d7fd2" RootDock="None" DockOperationType="TopInner" IsTopMost="False" />
+					</DockedInsideHostStateInfo>
+					<DockedOutsideHostStateInfo IsAttached="False" />
+				</ToolWindow>
+				<ToolWindow Key="ModuleManager" Guid="afe2d9e3-5ee8-4505-bcd1-022575c8ad02" DockedSize="524, 588" ImageIndex="-1" Text="Module Manager">
+					<AutoHideStateInfo RootDock="Right" />
+					<DockedInsideHostStateInfo RootDock="Right" IsAttached="True">
+						<AttachedToAfter Guid="3571f354-ab86-40c9-98d8-68699bd2d6f4" />
+						<DockedBy Guid="571e2195-8e2d-4f31-8d67-9475e62d7fd2" RootDock="None" DockOperationType="TopInner" IsTopMost="False" />
+					</DockedInsideHostStateInfo>
+					<DockedOutsideHostStateInfo IsAttached="False" />
+				</ToolWindow>
+			</ToolWindowContainer>
+		</HostContainerControl>
+		<AutoHide Dock="Left" />
+		<AutoHide Dock="Right" />
+		<AutoHide Dock="Top" />
+		<AutoHide Dock="Bottom" />
+		<TabbedDocuments Orientation="Horizontal" />
+		<FloatingContainers />
+		<Hidden>
+			<ToolWindow Key="ScriptExplorer" Guid="6d1b4c8a-93c3-4efe-8a33-f5f8e75106e2" State="DockableInsideHost" DockedSize="500, 359" ImageIndex="-1" Text="Script Explorer">
+				<AutoHideStateInfo RootDock="Left" />
+				<DockedInsideHostStateInfo RootDock="Left" IsAttached="False">
+					<DockedBy Guid="179c969f-6af4-4dc4-9bcf-30db2aa916b5" RootDock="Left" DockOperationType="RightOuter" IsTopMost="True" />
+					<DockedBy Guid="3571f354-ab86-40c9-98d8-68699bd2d6f4" RootDock="None" DockOperationType="TopInner" IsTopMost="False" />
+					<DockedBy Guid="571e2195-8e2d-4f31-8d67-9475e62d7fd2" RootDock="None" DockOperationType="TopInner" IsTopMost="False" />
+					<DockedBy Guid="afe2d9e3-5ee8-4505-bcd1-022575c8ad02" RootDock="None" DockOperationType="TopInner" IsTopMost="False" />
+				</DockedInsideHostStateInfo>
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+			<ToolWindow Key="PowerGUIOnline" Guid="179c969f-6af4-4dc4-9bcf-30db2aa916b5" State="TabbedDocument" ImageIndex="-1" Text="PowerGUIOnline">
+				<AutoHideStateInfo RootDock="Left" />
+				<DockedInsideHostStateInfo RootDock="Left" IsAttached="False" />
+				<DockedOutsideHostStateInfo IsAttached="False" />
+			</ToolWindow>
+		</Hidden>
+	</LayoutData>
+	<CustomData>
+		<DocumentWindowLayout Version="1.0.0.0">
+			<TabbedDocuments Orientation="Horizontal" SelectedTabbedMdiContainerIndex="-1" />
+		</DocumentWindowLayout>
+	</CustomData>
+</ToolWindowLayout>

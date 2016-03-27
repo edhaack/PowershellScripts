@@ -1,0 +1,206 @@
+<h2>Test/QA Deployment</h2>
+<p>
+Directory: RolloutToTest<br/>
+Script: PromoteWebsite.ps1<br/>
+Purpose: Generic Website/application deployment script that removes any source code and other files/directories to exclude not needed.<br/>
+<br/>
+Note: This powershell script is run by a TeamCity Server, and copies files/dirs from source to destination provided.<br/>
+<br/>
+
+</p>
+
+
+<p>
+	Documentation about the process to Deploy to Demo has been passed around from person-to-person over the years. These scripts (as of March 2014) allow relatively automatic execution of those steps.</p>
+<h3>
+	UPDATE (3/14)</h3>
+<p>
+	Steps 1 &amp; 2 have been consolidated, and can be executed via TeamCity by <a href="http://ehaack:8181/project.html?projectId=PromoteToDemo&amp;tab=projectOverview" target="_blank">clicking here</a>&nbsp;and then click &quot;Run&quot;. If prompted, enter your Xceligent Domain credentials (e.g. <em>Xceligent\uName</em>). Side Note: The &#39;Guest Account&#39; does not allow you to &quot;run&quot; these scripts.</p>
+<p>
+	&nbsp;</p>
+<h3>
+	Here are the Steps</h3>
+<ol>
+	<li>
+		Get the latest version of the deployment scripts*
+		<ul>
+			<li>
+				Open Visual Studio</li>
+			<li>
+				View: Source Control Explorer</li>
+			<li>
+				Drill down to:&nbsp;$/Portfolio/Common/Utility/Promotion Scripts/TestToDemoRollout</li>
+			<li>
+				Get latest on:&nbsp;TestToDemoRollout</li>
+		</ul>
+	</li>
+	<li>
+		Copy, Zip and Transfer to NetStandard (Hosting Company)*
+		<ul>
+			<li>
+				Open &quot;<strong>Powershell</strong>&quot;&nbsp;</li>
+			<li>
+				Before running this script for the first time, run &quot;<span style="font-family: 'courier new', courier, monospace;">Set-ExecutionPolicy Unrestricted</span>&quot; within the PowerShell command line.
+				<ul>
+					<li>
+						You will not need to ever enter this command again on your machine.</li>
+				</ul>
+			</li>
+			<li>
+				Execute the following
+				<ul>
+					<li>
+						cd &quot;C:\TFS\Common\Utility\Promotion Scripts\TestToDemoRollout&quot;</li>
+					<li>
+						.\DemoBuild-Prepare.ps1</li>
+				</ul>
+			</li>
+			<li>
+				Notes:
+				<ul>
+					<li>
+						This script will
+						<ul>
+							<li>
+								Copy Website files from Test/QA
+								<ul>
+									<li>
+										CDX</li>
+									<li>
+										ReportGenerationService</li>
+									<li>
+										ReportPortalService</li>
+									<li>
+										ServicePortalWeb&nbsp;</li>
+								</ul>
+							</li>
+							<li>
+								Zip up all copied files, along with &quot;The Build Configuration Files&quot;</li>
+							<li>
+								FTP to server at NetStandard (where the UAT/Demo and Production Servers reside).</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		Remote into Deployment Server (DB3)
+		<ul>
+			<li>
+				Notes:
+				<ul>
+					<li>
+						This script should&nbsp;already exist on the deployment server. (e.g. on DB3 at D:\Deployments)
+						<ul>
+							<li>
+								Location: TFS\Common\Utility\Promotion Scripts\TestToDemoRollout-Part2\DemoBuild-Rollout.ps1&nbsp;</li>
+							<li>
+								<strong>Only overwrite&nbsp;if there are changes to the script.</strong></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<strong>RemoteDesktop </strong>to the deployment server (e.g. DB3)*
+				<ul>
+					<li>
+						These servers are on the &quot;<em>Xceligent.Local</em>&quot; domain. If an account is needed, contact your supervisor.</li>
+				</ul>
+			</li>
+			<li>
+				Open <strong>PowerShell </strong>with&nbsp;&quot;Run as Administrator&quot;</li>
+			<li>
+				Execute the following
+				<ul>
+					<li>
+						cd &quot;D:\Deployment&quot;</li>
+					<li>
+						.\DemoBuild-Rollout.ps1
+						<ul>
+							<li>
+								This script will:
+								<ul>
+									<li>
+										copy the uploaded/ftp&#39;d zip/roll package,</li>
+									<li>
+										remove the &quot;Deploy_Old&quot; directory,</li>
+									<li>
+										rename directory &quot;Deploy&quot; to &quot;Deploy_Old&quot; and</li>
+									<li>
+										extract the zip roll package to directory &quot;Deploy&quot;</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Start <strong>MaxCopy</strong>
+				<ul>
+					<li>
+						Notes
+						<ul>
+							<li>
+								The Deployment zip file (package) contains a copy of MaxCopy, a windows app that copies files from the unarchived zip into the configured destination.</li>
+							<li>
+								<em>MaxCopy&nbsp;</em>is located:&nbsp;TFS\Common\Utility\Promotion Scripts\testtodemorollout\the build config files\maxcopyfiles\MaxCopy\MaxCopy.exe</li>
+						</ul>
+					</li>
+					<li>
+						Open&nbsp;<em>MaxCopy</em></li>
+					<li>
+						Open Template:&nbsp;Deploy_Demo_WebD.mcp</li>
+					<li>
+						Uncheck:&nbsp;<em>Verify File Counts When Finished</em></li>
+					<li>
+						Click Run.
+						<ul>
+							<li>
+								Starts&nbsp;the process of copying files to the Demo Web Server (<strong>\\WebD</strong>) as well as the Demo Report Server (<strong>\\report-demo</strong>)
+								<ul>
+									<li>
+										Confirm what files are copied where by opening up Deploy_Demo_WebD.mcp in a text editor; it&#39;s just an xml file.</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ol>
+<p>
+	Communicate that UAT/Demo web site files have been updated.</p>
+<p>
+	&nbsp;</p>
+<p>
+	*These steps can now be consolidated and executed via TeamCity by <a href="http://ehaack:8181/project.html?projectId=PromoteToDemo&amp;tab=projectOverview" target="_blank">clicking here</a>&nbsp;and then click &quot;Run&quot;.</p>
+<p>
+	----</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+
+	
+<p>
+<table border="1">
+<tr><td colspan="3"><b>NOTES</b></td></tr>
+<tr><td>Date</td><td>Author</td><td>Notes</td></tr>
+<tr><td>2014.03.13</td><td>E. Haack</td><td>Created</td></tr>
+<tr><td>2014.03.14</td><td>E. Haack</td><td>Updated to reflect new TeamCity ability for Steps 1 & 2</td></tr>
+</table>
+	
+	
+	</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>

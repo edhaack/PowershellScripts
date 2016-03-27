@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<configuration>
+	<appSettings>
+		<add key="DB:MainDB" value="data source=xdsqltest\cdx,1705;initial catalog=XcelWeb_Prod;user=xceligentuser;password=xceligentuser"/>
+		<!-- SMTP Server -->
+		<!-- Production
+		<add key="smtpServer" value="APPMAIL" />
+		-->
+		<!-- Dev/Local -->
+		<add key="smtpServer" value="VMAIL"/>
+		<add key="MapPointPath" value="http://staging.mappoint.net/standard-30/mappoint.wsdl"/>
+		<add key="MapPointUserId" value="128944"/>
+		<add key="MapPointPassword" value="m@pP0int"/>
+		<add key="MPUser" value="128944"/>
+		<add key="MPPass" value="m@pP0int"/>
+		<add key="SetupBranch" value="26445"/>
+		<add key="TemplateDirectory" value="C:\devroot\CDX_Direct\"/>
+		<!--Server/Dir for each application that you want the cache to be synchronized(no need to include yourself)-->
+		<add key="servers" value="10.50.2.213/CdxDirect/CacheControl"/>
+		<!-- This is the current domain, it is used to correctly change the domain for links according to environment -->
+		<add key="thisDomain" value="10.50.2.213"/>
+	</appSettings>
+  <connectionStrings>
+    <add name="MainDB" connectionString="data source=xdsqltest\cdx,1705;initial catalog=XcelWeb_Prod;user=xceligentuser;password=xceligentuser"/>
+  </connectionStrings>
+	<system.web>
+
+    <identity impersonate="true" userName="cdxuser" password="no#Nsense*"/>
+
+    <compilation debug="true" strict="false" explicit="true"/>
+
+    <authentication mode="Windows"/>
+    <httpRuntime requestValidationMode="2.0"/>
+    <pages controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID">
+      <namespaces>
+        <add namespace="Microsoft.VisualBasic"/>
+        <add namespace="System.Data"/>
+        <add namespace="System.Drawing"/>
+      </namespaces>
+    </pages>
+  </system.web>
+  <uri>
+    <schemeSettings>
+      <add name="http" genericUriParserOptions="DontUnescapePathDotsAndSlashes"/>
+    </schemeSettings>
+  </uri>
+</configuration>

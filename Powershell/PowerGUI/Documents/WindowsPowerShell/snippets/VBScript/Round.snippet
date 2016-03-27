@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Round</Title>
+      <Shortcut>round</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Round function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>value</ID>
+          <Default>[Math]::PI</Default>
+          <ToolTip>Value to round off</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfDecimalPlaces</ID>
+          <Default>2</Default>
+          <ToolTip>The number of decimal places to include in the rounding</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = [Math]::Round($value$,$numberOfDecimalPlaces$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

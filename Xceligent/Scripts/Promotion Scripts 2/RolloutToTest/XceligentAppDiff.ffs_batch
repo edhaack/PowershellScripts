@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FreeFileSync XmlFormat="3" XmlType="BATCH">
+    <MainConfig>
+        <Comparison>
+            <Variant>Content</Variant>
+            <Symlinks>Exclude</Symlinks>
+        </Comparison>
+        <SyncConfig>
+            <Variant>Update</Variant>
+            <CustomDirections>
+                <LeftOnly>right</LeftOnly>
+                <RightOnly>left</RightOnly>
+                <LeftNewer>right</LeftNewer>
+                <RightNewer>left</RightNewer>
+                <Different>none</Different>
+                <Conflict>none</Conflict>
+            </CustomDirections>
+            <DetectMovedFiles>false</DetectMovedFiles>
+            <DeletionPolicy>RecycleBin</DeletionPolicy>
+            <VersioningFolder Style="Replace"/>
+        </SyncConfig>
+        <GlobalFilter>
+            <Include>
+                <Item>*</Item>
+            </Include>
+            <Exclude>
+                <Item>*\desktop.ini</Item>
+                <Item>*\thumbs.db</Item>
+                <Item>*\_derived\*</Item>
+                <Item>*\_vti_cnf\*</Item>
+                <Item>*.vssscc;*.sln;</Item>
+                <Item>\Web.Config</Item>
+                <Item>\xceligentApp-msbuild.proj</Item>
+                <Item>\xceligentApp-msbuild.proj.teamcity</Item>
+                <Item>\xceligentApp-msbuild.proj.teamcity.msbuild.tcargs</Item>
+                <Item>*.config;</Item>
+            </Exclude>
+            <TimeSpan Type="None">0</TimeSpan>
+            <SizeMin Unit="None">0</SizeMin>
+            <SizeMax Unit="None">0</SizeMax>
+        </GlobalFilter>
+        <FolderPairs>
+            <Pair>
+                <Left>C:\Temp\xceligentApp</Left>
+                <Right>\\XDWEBTEST\devroot\xceligentApp</Right>
+            </Pair>
+        </FolderPairs>
+        <OnCompletion>Close progress dialog</OnCompletion>
+    </MainConfig>
+    <BatchConfig>
+        <HandleError>Ignore</HandleError>
+        <RunMinimized>false</RunMinimized>
+        <LogfileFolder Limit="-1">C:\Temp\XceligentAppDiff.txt</LogfileFolder>
+    </BatchConfig>
+</FreeFileSync>

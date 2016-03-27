@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>MsgBox</Title>
+      <Shortcut>msgbox</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript MsgBox function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result of the MessageBox::Show method</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>title</ID>
+          <Default>"Question about PowerShell"</Default>
+          <ToolTip>The title of the message box</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>message</ID>
+          <Default>"Do you like PowerShell better than VBScript?"</Default>
+          <ToolTip>The message inside the message box</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = [System.Windows.Forms.MessageBox]::Show($message$,$title$,[System.Windows.Forms.MessageBoxButtons]::YesNo,[System.Windows.Forms.MessageBoxIcon]::Question,[System.Windows.Forms.MessageBoxDefaultButton]::Button1)
+if ($result$ -eq [System.Windows.Forms.DialogResult]::Yes) {
+	$selected$$end$
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

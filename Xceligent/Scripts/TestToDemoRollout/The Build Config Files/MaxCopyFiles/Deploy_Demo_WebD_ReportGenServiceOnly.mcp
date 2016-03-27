@@ -1,0 +1,10 @@
+<XCopyProject name="Update_Demo_WebD">
+  <items>
+	<item type="dir" source="D:\Deployment\Rollout\Production\ReportGenerationService" destination="\\report-demo\c$\inetpub\wwwroot\ReportGenerationService" differential="false" deletedest="false" wildcard="" />
+	<item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\ReportGenerationService\web.config" destination="\\report-demo\c$\inetpub\wwwroot\ReportGenerationService\web.config" differential="false" deletedest="false" wildcard="" />	
+  </items>
+  <actions>
+    <action type="0" machinename="webd" relatestoitem="-1" occurs="beforeproject" />
+    <action type="1" machinename="webd" relatestoitem="-1" occurs="afterproject" />
+  </actions>
+</XCopyProject>

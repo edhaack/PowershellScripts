@@ -1,0 +1,12 @@
+<XCopyProject name="Update_web0">
+  <items>
+    
+    <item type="dir" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer" destination="\\web4\d$\The Build Config Files\Prod Build Config Files" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer\global_config.asp" destination="\\web4\d$\Inetpub\Production\global_config.asp" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer\CDX\web.config" destination="\\web4\d$\Inetpub\Production\CDX\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer\reportportalservice\web.config" destination="\\web4\d$\Inetpub\Production\reportportalservice\web.config" differential="false" deletedest="false" wildcard="" />    
+
+  </items>
+  <actions>
+  </actions>
+</XCopyProject>

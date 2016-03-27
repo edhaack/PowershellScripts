@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>if...elseif...else</Title>
+      <Shortcut>ifee</Shortcut>
+      <Description>Insert an if...elseif...else statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>conditionA</ID>
+          <Default>$true</Default>
+          <ToolTip>First conditional expression to evaluate</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>conditionB</ID>
+          <Default>$true</Default>
+          <ToolTip>Second conditional expression to evaluate</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[if ($conditionA$) {
+	$selected$$end$
+} elseif ($conditionB$) {
+} else {
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

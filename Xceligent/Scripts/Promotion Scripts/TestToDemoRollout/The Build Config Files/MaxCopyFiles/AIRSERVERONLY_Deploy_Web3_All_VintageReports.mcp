@@ -1,0 +1,21 @@
+<XCopyProject name="Update_web3_vintageReports">
+  <items>
+    <item type="dir" source="d:\deployment\Rollout\Production\xceligentApp" destination="\\web3\d$\Inetpub\Production\xceligentApp" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\VerifiedSaleComps" destination="\\web3\d$\Inetpub\Production\VerifiedSaleComps" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\tenantApp" destination="\\web3\d$\Inetpub\Production\tenantApp" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\PrivateBrandingCode" destination="\\web3\d$\Inetpub\Production\PrivateBrandingCode" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\CDX" destination="\\web3\d$\Inetpub\Production\CDX" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\ReportPortalService" destination="\\web3\d$\Inetpub\Production\ReportPortalService" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\Production\global.asa" destination="\\web3\d$\Inetpub\Production\global.asa" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\XceligentData_Production" destination="\\web3\d$\Inetpub\XceligentData_Production" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\components" destination="\\web3\d$\components" differential="true" deletedest="false" wildcard="dll,ocx,bat" />
+    <item type="dir" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer" destination="\\web3\d$\The Build Config Files\Prod Build Config Files" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer\global_config.asp" destination="\\web3\d$\Inetpub\Production\global_config.asp" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer\CDX\web.config" destination="\\web3\d$\Inetpub\Production\CDX\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Prod Build Config Files\VintageReportServer\ReportPortalService\web.config" destination="\\web3\d$\Inetpub\Production\ReportPortalService\web.config" differential="false" deletedest="false" wildcard="" />
+  </items>
+  <actions>
+    <action type="0" machinename="web3" relatestoitem="-1" occurs="beforeproject" />
+    <action type="1" machinename="web3" relatestoitem="-1" occurs="afterproject" />
+  </actions>
+</XCopyProject>

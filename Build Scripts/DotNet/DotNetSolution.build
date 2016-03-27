@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project name="BRE WCF Service Build" default="build">
+  <!-- nAnt Build Script -->
+  <property name="MSBuildPath" value="C:\WINDOWS\Microsoft.NET\Framework\v3.5\MSBuild.exe"/>
+  <property name="SolutionFile" value="BusinessRulesEngineFluorine.sln"/>
+  <property name="SolutionConfiguration" value="Debug"/>
+  <property name="OutputDirectory" value="..\Output\FlourineWebsite\"/>
+
+  <target name="build">
+    <exec program="${MSBuildPath}">
+      <arg line='"${SolutionFile}"' />
+      <arg line="/property:Configuration=${SolutionConfiguration}" />
+      <arg line="/property:OutDir=${OutputDirectory}" />
+      <arg value="/target:Rebuild" />
+      <arg value="/verbosity:normal" />
+      <arg value="/nologo" />
+    </exec>
+  </target>
+
+</project>

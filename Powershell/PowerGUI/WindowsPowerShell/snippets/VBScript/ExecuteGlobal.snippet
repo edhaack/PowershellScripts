@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ExecuteGlobal</Title>
+      <Shortcut>executeglobal</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript ExecuteGlobal statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>scriptToExecute</ID>
+          <Default>'$global:allVerbs = Get-Command -CommandType Cmdlet | Group-Object -Property Verb -NoElement | ForEach-Object { $_.Name }'</Default>
+          <ToolTip>The script to execute</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[Invoke-Expression -Command $scriptToExecute$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

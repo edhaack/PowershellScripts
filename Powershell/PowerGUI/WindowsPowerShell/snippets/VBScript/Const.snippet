@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Const</Title>
+      <Shortcut>const</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Const statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>variableName</ID>
+          <Default>MaxItems</Default>
+          <ToolTip>The name of the constant variable that will be created</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>value</ID>
+          <Default>256</Default>
+          <ToolTip>The value that will be assigned to the constant variable</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[Set-Variable -Name $variableName$ -Value $value$ -Option Constant$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

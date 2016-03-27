@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Mid</Title>
+      <Shortcut>mid</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Mid function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>stringVariable</ID>
+          <Default>$myString</Default>
+          <ToolTip>The string from which you want to extract a substring</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>startingIndex</ID>
+          <Default>2</Default>
+          <ToolTip>The starting index of the substring to extract</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>numberOfCharacters</ID>
+          <Default>3</Default>
+          <ToolTip>The number of characters to extract</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = $stringVariable$.SubString($startingIndex$,$numberOfCharacters$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

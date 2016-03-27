@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Custom object</Title>
+      <Shortcut>object</Shortcut>
+      <Description>Create a new custom object with properties</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>NewObject</ID>
+          <Default>$newObject</Default>
+          <ToolTip>Variable that will hold the new object</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>TypeName</ID>
+          <Default>MyCustomObjectType</Default>
+          <ToolTip>The type name to use for the custom object (with no spaces)</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>PropertyNameA</ID>
+          <Default>PropertyA</Default>
+          <ToolTip>Name of the first property</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ValueA</ID>
+          <Default>$valueA</Default>
+          <ToolTip>Value expression that defines the value of the first property</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>PropertyNameB</ID>
+          <Default>PropertyB</Default>
+          <ToolTip>Name of the second property</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ValueB</ID>
+          <Default>$valueB</Default>
+          <ToolTip>Value expression that defines the value of the second property</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$NewObject$ = New-Object -TypeName System.Management.Automation.PSObject
+$NewObject$.PSObject.TypeNames.Insert(0,'$TypeName$')
+$NewObject$ `
+	| Add-Member -Name $PropertyNameA$ -MemberType NoteProperty -Value $ValueA$ -PassThru `
+	| Add-Member -Name $PropertyNameB$ -MemberType NoteProperty -Value $ValueB$ -PassThru$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

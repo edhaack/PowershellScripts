@@ -1,0 +1,25 @@
+******************************** Started ********************************
+ScriptEditor.exe Error: 2 : CollectAndSend start
+    ProcessId=7004
+    ThreadId=1
+    DateTime=2015-05-10T01:15:54.6996237Z
+ScriptEditor.exe Error: 2 : CollectAndSend stop
+    ProcessId=7004
+    ThreadId=1
+    DateTime=2015-05-10T01:15:54.6996237Z
+ScriptEditor.exe Error: 2 : CollectAndSend start
+    ProcessId=7004
+    ThreadId=1
+    DateTime=2015-05-10T01:15:54.6996237Z
+ScriptEditor.exe Error: 2 : CollectAndSend stop
+    ProcessId=7004
+    ThreadId=1
+    DateTime=2015-05-10T01:15:54.6996237Z
+ScriptEditor.exe Error: 2 : IsOffline start
+    ProcessId=7004
+    ThreadId=1
+    DateTime=2015-05-10T01:15:54.6996237Z
+ScriptEditor.exe Error: 2 : IsOffline stop
+    ProcessId=7004
+    ThreadId=1
+    DateTime=2015-05-10T01:15:54.9340168Z

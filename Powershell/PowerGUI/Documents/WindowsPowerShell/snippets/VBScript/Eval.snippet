@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Eval</Title>
+      <Shortcut>eval</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Eval function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>leftHandSide</ID>
+          <Default>$firstValue</Default>
+          <ToolTip>Left-hand side of the expression</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>operator</ID>
+          <Default>-eq</Default>
+          <ToolTip>Operator to use when evaluating expression</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>rightHandSide</ID>
+          <Default>$secondValue</Default>
+          <ToolTip>Right-hand side of the expression</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$result$ = $leftHandSide$ $operator$ $rightHandSide$$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

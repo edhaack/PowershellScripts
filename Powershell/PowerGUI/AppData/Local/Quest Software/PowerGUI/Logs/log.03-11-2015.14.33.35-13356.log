@@ -1,0 +1,25 @@
+******************************** Started ********************************
+ScriptEditor.exe Error: 2 : CollectAndSend start
+    ProcessId=13356
+    ThreadId=1
+    DateTime=2015-03-11T19:33:35.4246911Z
+ScriptEditor.exe Error: 2 : CollectAndSend stop
+    ProcessId=13356
+    ThreadId=1
+    DateTime=2015-03-11T19:33:35.4256918Z
+ScriptEditor.exe Error: 2 : CollectAndSend start
+    ProcessId=13356
+    ThreadId=1
+    DateTime=2015-03-11T19:33:35.4256918Z
+ScriptEditor.exe Error: 2 : CollectAndSend stop
+    ProcessId=13356
+    ThreadId=1
+    DateTime=2015-03-11T19:33:35.4256918Z
+ScriptEditor.exe Error: 2 : IsOffline start
+    ProcessId=13356
+    ThreadId=1
+    DateTime=2015-03-11T19:33:35.4256918Z
+ScriptEditor.exe Error: 2 : IsOffline stop
+    ProcessId=13356
+    ThreadId=1
+    DateTime=2015-03-11T19:33:35.6545694Z

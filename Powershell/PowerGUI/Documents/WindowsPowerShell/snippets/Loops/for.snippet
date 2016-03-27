@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>for</Title>
+      <Shortcut>for</Shortcut>
+      <Description>Insert a for loop statement</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>index</ID>
+          <Default>$index</Default>
+          <ToolTip>Variable that will hold the current index</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>count</ID>
+          <Default>$count</Default>
+          <ToolTip>Value expression that defines the maximum index value</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[for ($index$ = 0; $index$ -lt $count$; $index$++) {
+	$selected$$end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

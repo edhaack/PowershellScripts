@@ -1,0 +1,18 @@
+<XCopyProject name="Update_Demo_WebD">
+  <items>
+    <item type="dir" source="d:\deployment\Rollout\Production\CDX" destination="\\webD\c$\Inetpub\Demo\CDX" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\ReportPortalService" destination="\\webD\c$\Inetpub\Demo\ReportPortalService" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\Production\ServicePortalWeb" destination="\\webD\c$\Inetpub\Demo\ServicePortalWeb" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="D:\Deployment\Rollout\Production\ReportGenerationService" destination="\\report-demo\c$\inetpub\wwwroot\ReportGenerationService" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\global_config.asp" destination="\\webD\c$\Inetpub\Demo\global_config.asp" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\CDX\web.config" destination="\\webD\c$\Inetpub\Demo\CDX\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\ReportPortalService\web.config" destination="\\webD\c$\Inetpub\Demo\ReportPortalService\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\ServicePortalWeb\web.config" destination="\\webD\c$\Inetpub\Demo\ServicePortalWeb\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="file" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files\ReportGenerationService\web.config" destination="\\report-demo\c$\inetpub\wwwroot\ReportGenerationService\web.config" differential="false" deletedest="false" wildcard="" />
+    <item type="dir" source="d:\deployment\Rollout\The Build Config Files\Demo Build Config Files" destination="\\webD\c$\The Build Config Files\Demo Build Config Files" differential="false" deletedest="true" wildcard="" />
+  </items>
+  <actions>
+    <action type="0" machinename="webd" relatestoitem="-1" occurs="beforeproject" />
+    <action type="1" machinename="webd" relatestoitem="-1" occurs="afterproject" />
+  </actions>
+</XCopyProject>

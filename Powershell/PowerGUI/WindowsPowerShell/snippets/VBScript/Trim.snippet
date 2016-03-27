@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Trim</Title>
+      <Shortcut>trim</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript Trim function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>stringVariable</ID>
+          <Default>$myString</Default>
+          <ToolTip>The string from which you want to trim characters</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>charactersToTrim</ID>
+          <Default>' '</Default>
+          <ToolTip>The characters you wish to trim from the string (if you omit this parameter entirely, only spaces will be trimmed)</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$stringVariable$ = $stringVariable$.Trim($charactersToTrim$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

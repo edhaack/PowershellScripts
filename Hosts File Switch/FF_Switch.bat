@@ -1,0 +1,1 @@
+START /WAIT CScript G:\apps\FF_Switch.vbs //NoLogo

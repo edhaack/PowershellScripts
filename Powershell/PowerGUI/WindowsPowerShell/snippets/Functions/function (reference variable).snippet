@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Reference</Title>
+      <Shortcut>fxref</Shortcut>
+      <Description>Create a new function that modifies a reference variable</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Name</ID>
+          <Default>Test-Reference</Default>
+          <ToolTip>The name of the function</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ReferenceParameter</ID>
+          <Default>ReferenceParameter</Default>
+          <ToolTip>The name of the parameter that will accept the reference variable</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>NewValue</ID>
+          <Default>'Modified'</Default>
+          <ToolTip>A value expression that defines what the new value of the reference variable will be</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[function $Name$ {
+	[CmdletBinding()]
+	[OutputType([System.Void])]
+	param(
+		[Parameter(Mandatory=$true)]
+		[ValidateNotNullOrEmpty()]
+		[REF]$$ReferenceParameter$
+	)
+	try {
+		$$ReferenceParameter$.Value = $NewValue$
+		$selected$$end$
+	} catch {
+		throw
+	}
+}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

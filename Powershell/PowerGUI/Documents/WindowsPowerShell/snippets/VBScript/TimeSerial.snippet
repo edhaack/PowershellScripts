@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>TimeSerial</Title>
+      <Shortcut>timeserial</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript TimeSerial function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>hour</ID>
+          <Default>11</Default>
+          <ToolTip>Value that identifies the hour</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>minute</ID>
+          <Default>22</Default>
+          <ToolTip>Value that identifies the minute</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>second</ID>
+          <Default>33</Default>
+          <ToolTip>Value that identifies the second</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+          <![CDATA[$result$ = Get-Date -Hour $hour$ -Minute $minute$ -Second $second$ -DisplayHint Time$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Set strict mode</Title>
+      <Shortcut>strict</Shortcut>
+      <Description>Set the strict mode for basic best-practice rule enforcement in modules, functions or scripts</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>version</ID>
+          <Default>2</Default>
+          <ToolTip>The PowerShell version containing the best-practice rules that you want to adhere to (use 'Latest' if you want to use the best practices for the current version of Windows PowerShell)</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[Set-StrictMode -Version $version$
+$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LPS reInsight Business Rules Engine Admin Buildfile" default="build" basedir="../">
+
+	<!-- DEFINITIONS -->
+	<property file="${basedir}/build/build.properties" />
+
+	<!-- RESOURCE -->
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+
+	<!-- **************************************************************** 
+		 CUSTOMIZE BEGINS 
+		 **************************************************************** -->
+
+	<target name="build" description="Default Project Build" depends="verify-properties,cleanDeploy">
+		<echo>-= Business Rules Engine Admin =-</echo>
+		<antcall target="build-dependencies" />
+		<antcall target="version-update" />
+		<antcall target="build-wrapper" />
+		<antcall target="compile-project" />
+	</target>
+
+	<!-- **************************************************************** 
+		 CUSTOMIZE ENDS
+		 **************************************************************** -->
+
+	<!-- *************************************************************************************
+		 							INTERNAL TARGETS BELOW			        
+	     ************************************************************************************* -->
+	<target name="build-dependencies">
+		<!-- Build BRE Library SWC -->
+		<ant inheritAll="false" antfile="${basedir}/../BusinessRulesEngineLibrary/build/build.xml" target="build">
+			<property name="basedir" value="${basedir}/../BusinessRulesEngineLibrary" />
+			<property file="${basedir}/../BusinessRulesEngineLibrary/build/build.properties" />
+		</ant>	
+		<copy
+			file="${basedir}/../BusinessRulesEngineLibrary/bin/BusinessRulesEngineLibrary.swc"
+			tofile="${lib.dir}/BusinessRulesEngineLibrary.swc"
+		/>
+	</target>
+	
+	<target name="version-update">
+		<propertyset id="tdate"/>
+		<tstamp>
+			<format property="tdate" pattern="yyyyMMdd hhmmss"/>
+		</tstamp>
+
+		<echo>updating version to current datetime: ${tdate}</echo>
+		<replaceregexp byline="true">
+			<regexp pattern="public static const BUILD_DATE: String = \'([0-9]+ [0-9]+)'"/>
+			<substitution expression="public static const BUILD_DATE: String = '${tdate}'"/>
+			<fileset dir="${src.dir}">
+				<include name="Version.as"/>
+			</fileset>
+		</replaceregexp>
+	</target>
+	
+	<target name="build-wrapper">
+		<echo>Building Wrapper...</echo>
+		<html-wrapper 
+			title="${project.meta.title}" 
+			height="100%" 
+			width="100%" 
+			bgcolor="#FFFFFF" 
+			file="${project.wrapper.html}" 
+			application="${project.wrapper.application}" 
+			swf="${project.wrapper.application}" 
+			version-major="${project.wrapper.major}" 
+			version-minor="${project.wrapper.minor}" 
+			version-revision="${project.wrapper.version}" 
+			history="${project.wrapper.history}" 
+			template="${project.wrapper.template}" 
+			output="${project.output}" 
+		/>
+		<echo>Built Wrapper</echo>
+	</target>
+	
+	<target name="compile-project" description="Compile project">
+		<mxmlc file="${project.mxml}" 
+			incremental="${compiler.incremental}" 
+			actionscript-file-encoding="${compiler.encoding}" 
+			output="${project.output.swf}" 
+			debug="${compiler.debug}" 
+			keep-generated-actionscript="${compiler.keep-generated-as}"
+			services="${project.services}"
+			context-root="${project.context-root}"
+			>
+			
+			<metadata>
+				<creator name="${project.meta.creator}" />
+				<publisher name="${project.meta.publisher}"/>
+				<language code="${project.meta.language}" />
+			</metadata>		
+			
+			<!-- Get default compiler options. -->
+			<load-config filename="${compiler.config}"/>
+			
+			<default-background-color>0xFFFFFF</default-background-color>
+			
+			<!-- List of path elements that form the roots of ActionScript
+			            class hierarchies. -->
+			<compiler.source-path path-element="${src.dir}" />
+			
+			<!-- List of SWC files or directories that contain SWC files. -->
+           <compiler.library-path dir="${lib.dir}">
+                <include name="*.swc"/>
+            </compiler.library-path>
+            <compiler.library-path dir="${FLEX_HOME}/frameworks/libs">
+                <include name="*.swc"/>
+            </compiler.library-path>
+            <compiler.library-path dir="${FLEX_HOME}/frameworks/locale">
+                <include name="**/*"/>
+            </compiler.library-path>
+		
+		</mxmlc>
+		<echo>Compiled SWF To Deploy</echo>
+	</target>
+
+	<!-- SANITY CHECK -->
+	<target name="verify-properties">
+		<fail unless="FLEX_HOME">The "FLEX_HOME" property must be set in build/build.properties.</fail>
+	</target>
+	
+	<target name="cleanDeploy" description="Cleans the deploy file">
+		<echo>Deleting Deploy Directory...</echo>
+		<delete dir="${project.output}" failOnError="false" 
+			includeEmptyDirs="true" />
+		<echo>Deleted Deploy Directory</echo>
+		<echo>Creating Deploy Directory...</echo>
+		<mkdir dir="${project.output}" />
+		<echo>Created Deploy Directory</echo>
+	</target>
+	
+</project>

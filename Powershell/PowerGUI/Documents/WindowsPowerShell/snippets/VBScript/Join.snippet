@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Join</Title>
+      <Shortcut>join</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript IsObject function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>array</ID>
+          <Default>$array</Default>
+          <ToolTip>The array to convert into a delimited string</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>delimiter</ID>
+          <Default>','</Default>
+          <ToolTip>The delimiter that separates array values once they are joined</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = [string]::Join($delimiter$,$array$)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

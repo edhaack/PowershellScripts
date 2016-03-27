@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Custom object (from dynamic module)</Title>
+      <Shortcut>moduleobj</Shortcut>
+      <Description>Create a new custom object from a dynamically defined module (use module functions for methods and variables for properties)</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="powershell">
+        <![CDATA[$end$$windows7Clock = New-Module -AsCustomObject -ScriptBlock {
+
+	# Add a private GetDateDifference method to the custom object. This
+	# will not be visible to Get-Member.
+	function GetDateDifference {
+		param(
+			[DateTime]$Date
+		)
+		
+		($Date - (Get-Date))
+	}
+
+	# Add a private GetWindows7LaunchCountdown method to the custom object. This
+	# will not be visible to Get-Member.
+	function GetWindows7LaunchCountdown {
+		GetDateDifference -Date $Windows7Launch
+	}
+
+	# Add a public ToString method to the custom object. This will define what
+	# the object shows when it is converted to a string. This will be visible
+	# to Get-Member.
+	function ToString {
+		$timer = GetWindows7LaunchCountdown
+		"{0} days, {1} hours, {2} minutes and {3} seconds" `
+			-f $timer.Days,$timer.Hours,$timer.Minutes,$timer.Seconds
+	}
+	Export-ModuleMember -Function ToString
+
+	# Add a public Windows7Launch property to the custom object. This will be
+	# visible to Get-Member.
+	[DateTime]$Windows7Launch = '10/22/2009'
+	Export-ModuleMember -Variable Windows7Launch
+}
+
+# Set a custom type for your object
+$windows7Clock.PSTypeNames.Insert(0,'Windows7Clock')
+
+# Optionally add a script property to your object
+$windows7Clock | Add-Member -Name TimeRemaining -MemberType ScriptProperty -Value {[string]$this}
+
+# Show the object with the default output
+$windows7Clock
+
+# Show the object as a string
+[string]$windows7Clock]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

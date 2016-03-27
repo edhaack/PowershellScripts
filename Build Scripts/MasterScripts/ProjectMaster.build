@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<project name="BRE Master Build File" default="build">
+
+	<property name="Application.name" value="BusinessRulesEngineAdmin"/>
+	
+	<property name="project.root" value="..\.." />
+	<property name="project.dotNet" value="${project.root}\dotNET\Sandbox\BusinessRulesEngine" />
+	<property name="project.flex" value="${project.root}\Flex\Sandbox\BusinessRulesEngineAdmin" />
+	
+	<property name="project.solutions" value="${project.dotNet}\Solution" />
+	<property name="project.wcfService.build" value="${project.solutions}\BRE_WCFService.build" />
+	<property name="project.fluorineService.build" value="${project.solutions}\BRE_Fluorine.build" />
+	<property name="project.output.wcfWebsite" value="${project.dotNet}\Output\WcfWebSite\_PublishedWebsites" />
+	<property name="project.output.fluorineWebsite" value="${project.dotNet}\Output\FluorineWebSite\_PublishedWebsites" />
+	
+	<property name="project.flex.build" value="${project.flex}\BusinessRulesAdmin.build" />
+	
+	<property name="output.dir" value="${project.dotNet}\Output" />
+	<property name="output.fluorineWebsite" value="${output.dir}\FlourineWebsite\_PublishedWebsites\Website" />
+	<property name="output.wcfWebsite" value="${output.dir}\WcfWebsite\_PublishedWebsites\WCFWebsite" />
+
+	<property name="website.flex" value="C:\Website\BusinessRulesEngineAdmin" />
+	<property name="website.fluorine" value="${website.flex}\service" />
+	<property name="website.wcfService" value="${website.flex}\wcfService" />
+	
+
+	<!-- TARGETS -->
+    <target name="build" depends="clean,buildProjects,copyDotNet,zip"/>
+    
+    <target name="clean">
+    	<echo message="Clean the website" />
+    	<!-- Clean the final website output -->
+    	<delete dir="${website.flex}" failonerror="false"/>
+    </target>  
+      
+    <target name="buildProjects">
+    	<echo message="Building Projects" />
+    	<nant buildfile="${project.flex.build}"/>
+    	<nant buildfile="${project.wcfService.build}"/>
+		<nant buildfile="${project.fluorineService.build}"/>
+		
+		<!-- Flex build will copy to website, may need to move to this master build file -->
+    </target>
+    
+	<target name="copyDotNet">
+		<echo message="Copy dot net build outputs... " />
+		<copy todir="${website.fluorine}" includeemptydirs="true" overwrite="true">
+			<fileset basedir="${output.fluorineWebsite}">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+		<copy todir="${website.wcfService}" includeemptydirs="true" overwrite="true">
+			<fileset basedir="${output.wcfWebsite}">
+				<include name="**/*" />
+			</fileset>
+		</copy>	
+	</target>
+	
+	<target name="zip">
+		<!-- TODO Zip the final website files -->
+		<echo message="Zipping Website Files - Started" />
+		
+		<zip zipfile="${website.flex}\website.zip">
+			<fileset basedir="${website.flex}">
+				<include name="**/*" />
+				<exclude name="wcfService/**" />
+			</fileset>
+		</zip>
+		
+		<zip zipfile="${website.flex}\wcfWebsite.zip">
+			<fileset basedir="${website.wcfService}">
+				<include name="**/*" />
+			</fileset>
+		</zip>
+		
+		<echo message="Zipping Website Files - Complete" />
+	</target>
+	
+	<target name="deploy">
+		<echo message="Deploying to dev web server."/>
+		<copy todir="\\swbredv-ola01\C$\Website\BusinessRulesEngineAdmin" includeemptydirs="true" overwrite="true">
+			<fileset basedir="${website.flex}">
+				<include name="**/*" />
+			</fileset>
+		</copy>	
+		
+		<echo message="Deploy WCF to Application Server."/>
+		<copy todir="\\sgaredv-ola01\D$\Websites\BusinessRulesEngine" includeemptydirs="true" overwrite="true">
+			<fileset basedir="${website.flex}\wcfService">
+				<include name="**/*" />
+			</fileset>
+		</copy>	
+		
+	</target>
+    
+</project>

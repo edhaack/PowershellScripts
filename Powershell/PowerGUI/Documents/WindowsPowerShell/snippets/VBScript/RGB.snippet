@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>RGB</Title>
+      <Shortcut>rgb</Shortcut>
+      <Description>Insert the PowerShell equivalent of the VBScript RGB function</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>result</ID>
+          <Default>$result</Default>
+          <ToolTip>Variable to store the result</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>red</ID>
+          <Default>0</Default>
+          <ToolTip>The red component value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>green</ID>
+          <Default>95</Default>
+          <ToolTip>The green component value</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>blue</ID>
+          <Default>181</Default>
+          <ToolTip>The blue component value</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$result$ = [Convert]::ToInt32(('0x{2:X}{1:X}{0:X}' -f $red$,$green$,$blue$),16)$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<!--
+
+  Actipro UIStudio Bar Controls
+  Copyright (c) 2001-2006 Actipro Software LLC.  All rights reserved.
+  http://www.ActiproSoftware.com/Products/DotNet/
+
+-->
+<BarLayout Version="1.0" Complete="False">
+	<Commands>
+		<Command Type="BarButtonCommand" Category="GoCommand" Name="PowerGUIOnline">
+			<KeyboardShortcuts>
+				<KeyboardShortcut Action="Add" Key="131124" Description="Ctrl+4 (Global)" />
+			</KeyboardShortcuts>
+		</Command>
+		<Command Type="BarButtonCommand" Category="ViewCommand" Name="ZoomIn">
+			<KeyboardShortcuts>
+				<KeyboardShortcut Action="Add" Key="131179" Description="Ctrl+Num + (Global)" />
+				<KeyboardShortcut Action="Add" Key="131259" Description="Ctrl+= (Global)" />
+			</KeyboardShortcuts>
+		</Command>
+		<Command Type="BarButtonCommand" Category="ViewCommand" Name="ZoomOut">
+			<KeyboardShortcuts>
+				<KeyboardShortcut Action="Add" Key="131181" Description="Ctrl+Num - (Global)" />
+				<KeyboardShortcut Action="Add" Key="131261" Description="Ctrl+- (Global)" />
+			</KeyboardShortcuts>
+		</Command>
+		<Command Type="BarButtonCommand" Category="EditCommand" Name="ViewWhitespace">
+			<KeyboardShortcuts>
+				<KeyboardShortcut Action="Add" Key="196695" Description="Ctrl+Shift+W (Global)" />
+			</KeyboardShortcuts>
+		</Command>
+		<Command Type="BarButtonCommand" Category="EditCommand" Name="WordWrap">
+			<KeyboardShortcuts>
+				<KeyboardShortcut Action="Add" Key="393303" Description="Ctrl+Alt+W (Global)" />
+			</KeyboardShortcuts>
+		</Command>
+		<Command Type="BarButtonCommand" Category="GoCommand" Name="ScriptExplorer">
+			<KeyboardShortcuts>
+				<KeyboardShortcut Action="Add" Key="131125" Description="Ctrl+5 (Global)" />
+			</KeyboardShortcuts>
+		</Command>
+		<Command Type="BarButtonCommand" Category="ScriptSigningCommand" Name="SignFile">
+			<KeyboardShortcuts>
+				<KeyboardShortcut Action="Add" Key="196678" Description="Ctrl+Shift+F (Global)" />
+			</KeyboardShortcuts>
+		</Command>
+	</Commands>
+	<LayoutData>
+		<DockableToolBars>
+			<DockableToolBar Key="mainMenuBar" Position="Top" Guid="0f1115f7-679f-4033-820a-f1ecdfbea37c" Active="True">
+				<DockedStateInfo Position="Top" DockedRow="0" DockedColumn="0">
+					<DifferentRowBefore Guid="3f36d503-a4f7-4ad7-8ae5-dc45ab89033c" />
+					<DifferentRowBefore Guid="9c93cba4-53a6-4781-8ff8-6320a56de941" />
+					<DifferentRowBefore Guid="ceb74593-0818-4ebc-be87-01c48c2db9c5" />
+					<DifferentRowBefore Guid="e8e135e3-99f6-4a70-879e-124ca9fb5a6f" />
+				</DockedStateInfo>
+				<CommandLinks>
+					<CommandLink Action="Update" Index="0" Command="MenuBar.File">
+						<CommandLinks>
+							<CommandLink Action="Add" Index="6" Command="FileCommand.Encoding" BeginAGroup="True">
+								<CommandLinks>
+									<CommandLink Action="Add" Index="0" Command="FileCommand.ASCII" Text="ASCII" />
+									<CommandLink Action="Add" Index="1" Command="FileCommand.UTF8" Text="UTF-8" />
+									<CommandLink Action="Add" Index="2" Command="FileCommand.Unicode" />
+									<CommandLink Action="Add" Index="3" Command="FileCommand.UnicodeBigEndian" />
+									<CommandLink Action="Add" Index="4" Command="FileCommand.UTF32" />
+									<CommandLink Action="Add" Index="5" Command="FileCommand.UTF32BigEndian" />
+								</CommandLinks>
+							</CommandLink>
+							<CommandLink Action="Update" Index="10" Command="FileCommand.OpenAllUsersProfile">
+								<CommandLinks>
+									<CommandLink Action="Add" Index="0" Command="FileCommand.OpenAllUsersProfileLink" />
+								</CommandLinks>
+							</CommandLink>
+						</CommandLinks>
+					</CommandLink>
+					<CommandLink Action="Update" Index="1" Command="MenuBar.Edit">
+						<CommandLinks>
+							<CommandLink Action="Update" Index="9" Command="EditCommand.Advanced">
+								<CommandLinks>
+									<CommandLink Action="Add" Index="8" Command="EditCommand.ViewWhitespace" BeginAGroup="True" />
+									<CommandLink Action="Add" Index="9" Command="EditCommand.WordWrap" BeginAGroup="True" />
+									<CommandLink Action="Add" Index="10" Command="EditCommand.VirtualWhitespace" />
+								</CommandLinks>
+							</CommandLink>
+						</CommandLinks>
+					</CommandLink>
+					<CommandLink Action="Update" Index="2" Command="MenuBar.View">
+						<CommandLinks>
+							<CommandLink Action="Add" Index="2" Command="ViewCommand.TabScrollButtons" />
+							<CommandLink Action="Add" Index="9" Command="ViewCommand.ZoomIn" BeginAGroup="True" />
+							<CommandLink Action="Add" Index="10" Command="ViewCommand.ZoomOut" />
+						</CommandLinks>
+					</CommandLink>
+					<CommandLink Action="Update" Index="3" Command="MenuBar.Go">
+						<CommandLinks>
+							<CommandLink Action="Add" Index="3" Command="GoCommand.PowerGUIOnline" />
+							<CommandLink Action="Add" Index="4" Command="GoCommand.ScriptExplorer" />
+						</CommandLinks>
+					</CommandLink>
+					<CommandLink Action="Update" Index="4" Command="MenuBar.Debug">
+						<CommandLinks>
+							<CommandLink Action="Update" Index="6" Command="DebugCommand.Break" Visible="False" />
+							<CommandLink Action="Update" Index="7" Command="DebugCommand.StopDebugging" Visible="False" />
+							<CommandLink Action="Update" Index="9" Command="DebugCommand.StepOut" Visible="False" />
+						</CommandLinks>
+					</CommandLink>
+					<CommandLink Action="Add" Index="6" Command="MenuBar.ScriptSigning">
+						<CommandLinks>
+							<CommandLink Action="Add" Index="0" Command="ScriptSigningCommand.SignFile" />
+							<CommandLink Action="Add" Index="1" Command="ScriptSigningCommand.ViewSignature" />
+							<CommandLink Action="Add" Index="2" Command="ScriptSigningCommand.Options" BeginAGroup="True" />
+						</CommandLinks>
+					</CommandLink>
+					<CommandLink Action="Add" Index="8" Command="MenuBar.PowerGUIOnline">
+						<CommandLinks>
+							<CommandLink Action="Add" Index="0" Command="PowerGUIOnlineCommand.DeveloperResources">
+								<CommandLinks>
+									<CommandLink Action="Add" Index="0" Command="PowerGUIOnlineCommand.PowerGUIVSX" />
+									<CommandLink Action="Add" Index="1" Command="PowerGUIOnlineCommand.AdamDriscollOnTwitter" />
+									<CommandLink Action="Add" Index="2" Command="PowerGUIOnlineCommand.CSharpeningBlog" />
+								</CommandLinks>
+							</CommandLink>
+							<CommandLink Action="Add" Index="1" Command="PowerGUIOnlineCommand.Wallpaper" />
+							<CommandLink Action="Add" Index="2" Command="PowerGUIOnlineCommand.YouTubeChannel" />
+							<CommandLink Action="Add" Index="3" Command="PowerGUIOnlineCommand.Feedback" />
+						</CommandLinks>
+					</CommandLink>
+				</CommandLinks>
+			</DockableToolBar>
+			<DockableToolBar Key="mainToolBar" Position="Top" Guid="3f36d503-a4f7-4ad7-8ae5-dc45ab89033c" Active="True" DockedColumn="1" DockedRow="1" AutoShowForMode="False">
+				<DockedStateInfo Position="Top" DockedRow="1" DockedColumn="1">
+					<DifferentRowAfter Guid="0f1115f7-679f-4033-820a-f1ecdfbea37c" />
+					<SameRowBefore Guid="9c93cba4-53a6-4781-8ff8-6320a56de941" />
+					<SameRowBefore Guid="ceb74593-0818-4ebc-be87-01c48c2db9c5" />
+					<SameRowBefore Guid="e8e135e3-99f6-4a70-879e-124ca9fb5a6f" />
+				</DockedStateInfo>
+			</DockableToolBar>
+			<DockableToolBar Key="debugToolBar" Position="Top" Guid="9c93cba4-53a6-4781-8ff8-6320a56de941" Active="True" DockedColumn="2" DockedRow="1" AutoShowForMode="False">
+				<DockedStateInfo Position="Top" DockedRow="1" DockedColumn="2">
+					<DifferentRowAfter Guid="0f1115f7-679f-4033-820a-f1ecdfbea37c" />
+					<SameRowAfter Guid="3f36d503-a4f7-4ad7-8ae5-dc45ab89033c" />
+					<SameRowBefore Guid="ceb74593-0818-4ebc-be87-01c48c2db9c5" />
+					<SameRowBefore Guid="e8e135e3-99f6-4a70-879e-124ca9fb5a6f" />
+				</DockedStateInfo>
+			</DockableToolBar>
+			<DockableToolBar Key="editToolBar" Position="Top" Guid="ceb74593-0818-4ebc-be87-01c48c2db9c5" Active="True" DockedColumn="3" DockedRow="1" AutoShowForMode="False">
+				<DockedStateInfo Position="Top" DockedRow="1" DockedColumn="3">
+					<DifferentRowAfter Guid="0f1115f7-679f-4033-820a-f1ecdfbea37c" />
+					<SameRowAfter Guid="3f36d503-a4f7-4ad7-8ae5-dc45ab89033c" />
+					<SameRowAfter Guid="9c93cba4-53a6-4781-8ff8-6320a56de941" />
+					<SameRowBefore Guid="e8e135e3-99f6-4a70-879e-124ca9fb5a6f" />
+				</DockedStateInfo>
+			</DockableToolBar>
+			<DockableToolBar Key="Script Signing" Position="Top" Guid="e8e135e3-99f6-4a70-879e-124ca9fb5a6f" Active="True" CreationStyle="Custom" DockedColumn="684" DockedRow="1" AutoShowForMode="False">
+				<DockedStateInfo Position="Top" DockedRow="1" DockedColumn="684">
+					<DifferentRowAfter Guid="0f1115f7-679f-4033-820a-f1ecdfbea37c" />
+					<SameRowAfter Guid="3f36d503-a4f7-4ad7-8ae5-dc45ab89033c" />
+					<SameRowAfter Guid="9c93cba4-53a6-4781-8ff8-6320a56de941" />
+					<SameRowAfter Guid="ceb74593-0818-4ebc-be87-01c48c2db9c5" />
+				</DockedStateInfo>
+				<CommandLinks>
+					<CommandLink Action="Add" Index="0" Command="ScriptSigningCommand.SignFile" />
+					<CommandLink Action="Add" Index="1" Command="ScriptSigningCommand.ViewSignature" />
+					<CommandLink Action="Add" Index="2" Command="ScriptSigningCommand.Options" BeginAGroup="True" />
+				</CommandLinks>
+			</DockableToolBar>
+			<DockableToolBar Key="Version Control" Position="Top" Guid="fe4aa1c5-3376-44c0-8b71-8fb8bcd989a7" DockedColumn="159" DockedRow="1" AutoShowForMode="False">
+				<DockedStateInfo Position="Top" DockedRow="1" DockedColumn="159">
+					<DifferentRowAfter Guid="0f1115f7-679f-4033-820a-f1ecdfbea37c" />
+					<SameRowAfter Guid="3f36d503-a4f7-4ad7-8ae5-dc45ab89033c" />
+					<SameRowAfter Guid="9c93cba4-53a6-4781-8ff8-6320a56de941" />
+					<SameRowAfter Guid="ceb74593-0818-4ebc-be87-01c48c2db9c5" />
+				</DockedStateInfo>
+			</DockableToolBar>
+		</DockableToolBars>
+	</LayoutData>
+</BarLayout>

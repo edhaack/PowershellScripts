@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>.NET object</Title>
+      <Shortcut>new</Shortcut>
+      <Description>Create a new .NET object of a specified type</Description>
+      <Author>Quest Software, Inc.</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>NewObject</ID>
+          <Default>$guid</Default>
+          <ToolTip>Variable that will hold the new object</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>TypeName</ID>
+          <Default>System.Guid</Default>
+          <ToolTip>The type of object you are creating</ToolTip>
+        </Literal>
+        <Literal>
+          <ID>ArgumentList</ID>
+          <Default>'a21a34a4-5587-451c-9994-0683aff790f2'</Default>
+          <ToolTip>The arguments you want to pass to the constructor</ToolTip>
+        </Literal>
+      </Declarations>
+      <Code Language="powershell">
+        <![CDATA[$NewObject$ = New-Object -TypeName $TypeName$ -ArgumentList $ArgumentList$
+$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
