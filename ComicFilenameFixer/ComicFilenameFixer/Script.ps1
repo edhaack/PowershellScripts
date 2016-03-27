@@ -1,4 +1,4 @@
 ﻿#
 # Script.ps1
 #
-"yo world"
+"yo worl 2 d"
