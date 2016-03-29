@@ -116,7 +116,7 @@ function ComicFilenameFilter($directory, $comicDate) {
 
 		write-host "New File: $directory\$newFileName"
 		#Get on with it already... rename the damned file!
-		Rename-Item -Force "$fileDirectory" "$directory\$fileName"
+		Rename-Item -Force "$fileDirectory" "$directory\$newFileName"
 	}
 }
 
