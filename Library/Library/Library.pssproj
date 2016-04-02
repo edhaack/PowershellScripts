@@ -30,7 +30,9 @@
     <Folder Include="Comics\" />
     <Folder Include="Comics\ComicDownsizer\" />
     <Folder Include="Comics\FileRenaming\" />
+    <Folder Include="Common\Email\" />
     <Folder Include="Management\" />
+    <Folder Include="Common\" />
     <Folder Include="SQL\" />
   </ItemGroup>
   <ItemGroup>
@@ -38,6 +40,8 @@
     <Compile Include="Comics\ComicDownsizer\ResizerOfPictures.ps1" />
     <Compile Include="Comics\FileRenaming\ComicFilenameFilter.ps1" />
     <Compile Include="Comics\FileRenaming\ShowRenamer.ps1" />
+    <Compile Include="Common\Email\Email.psd1" />
+    <Compile Include="Common\Email\Email.psm1" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Comics\ComicDownsizer\7z.dll" />
