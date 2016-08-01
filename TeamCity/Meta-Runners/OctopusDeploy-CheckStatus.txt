@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta-runner name="OctopusDeploy: Check Target Status">
+  <description>Get Status from Octopus from last End-Point Health Check</description>
+  <settings>
+    <parameters>
+      <param name="Octopus.URL" value="%env.Octopus.URL%" />
+      <param name="Octopus.APIKey" value="%env.Octopus.APIKey%" />
+      <param name="Octopus.Environment" value="" />
+      <param name="Octopus.MachineName" value="" />
+    </parameters>
+    <build-runners>
+      <runner name="Check Octopus Target Status" type="jetbrains_powershell">
+        <parameters>
+          <param name="jetbrains_powershell_bitness" value="x86" />
+          <param name="jetbrains_powershell_execution" value="PS1" />
+          <param name="jetbrains_powershell_minVersion" value="5.0" />
+          <param name="jetbrains_powershell_noprofile" value="true" />
+          <param name="jetbrains_powershell_script_code"><![CDATA[function GetEnvironmentId($response) {
+	foreach($item in $response.Items) {
+		if($item.Name -eq $environmentName) {
+			$item.Id
+			return;
+		}
+	}
+}
+
+function GetStatusByMachineName($response) {
+	foreach($item in $response.Items) {
+		if($item.Name -eq $machineName) {
+			$item.Status
+			return;
+		}
+	}
+}
+
+function CheckOctopusTargetStatus($octopusUrl, $octopusApi, $environmentName, $machineName) {
+#$octopusUrl
+#$octopusApi
+#$environmentName
+#$machineName
+
+	$header = @{ "X-Octopus-ApiKey" = $octopusApi }
+	$response = Invoke-RestMethod $octopusUrl/api/environments -Method GET -Headers $header
+	$environemntId = GetEnvironmentId $response
+	$getMachinesByEnvironmentId = "$octopusUrl/api/environments/$environemntId/machines"
+	$finalResponse = Invoke-RestMethod $getMachinesByEnvironmentId -Method GET -Headers $header
+	$status = GetStatusByMachineName $finalResponse
+	if($status -ne "Online") {
+	 exit 1
+	}
+	"$environmentName / $machineName Online!"
+}
+
+#CheckOctopusTargetStatus "http://octopus.xceligent.org:8282" "API-EX0ACMEOBFA73A1A7PMF3ILE9HE" "UAT" "Atlas - UAT"
+CheckOctopusTargetStatus "%Octopus.URL%" "%Octopus.APIKey%" "%Octopus.Environment%" "%Octopus.MachineName%"]]></param>
+          <param name="jetbrains_powershell_script_mode" value="CODE" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <requirements />
+  </settings>
+</meta-runner>
+
