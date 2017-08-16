@@ -1,0 +1,39 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner]
+"subcommands"=""
+"MUIVerb"="Run Robot Run!"
+
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell]
+
+;NOTE: Keys use 'env#' for proper sort order.
+
+;DEV ENVIRONMENT
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env1]
+@="Dev: TestRail Run"
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env1\command]
+@="powershell -noexit D:\\GitHub\\DevOps\\Powershell\\VSProject\\Library\\Library\\Windows\\RobotContextMenu\\RobotRunner.ps1 \"DEV\" \"%1\""
+
+;DQ ENVIRONMENT
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env2]
+@="DQ: TestRail Run"
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env2\command]
+@="powershell -noexit D:\\GitHub\\DevOps\\Powershell\\VSProject\\Library\\Library\\Windows\\RobotContextMenu\\RobotRunner.ps1 \"DQ\" \"%1\""
+
+;QA ENVIRONMENT
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env3]
+@="QA: TestRail Run"
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env3\command]
+@="powershell -noexit D:\\GitHub\\DevOps\\Powershell\\VSProject\\Library\\Library\\Windows\\RobotContextMenu\\RobotRunner.ps1 \"QA\" \"%1\""
+
+;UAT ENVIRONMENT
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env4]
+@="UAT: TestRail Run"
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env4\command]
+@="powershell -noexit D:\\GitHub\\DevOps\\Powershell\\VSProject\\Library\\Library\\Windows\\RobotContextMenu\\RobotRunner.ps1 \"UAT\" \"%1\""
+
+;PROD ENVIRONMENT
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env5]
+@="PROD: TestRail Run"
+[HKEY_CLASSES_ROOT\directory\shell\RobotRunner\shell\env5\command]
+@="powershell -noexit D:\\GitHub\\DevOps\\Powershell\\VSProject\\Library\\Library\\Windows\\RobotContextMenu\\RobotRunner.ps1 \"PROD\" \"%1\""
